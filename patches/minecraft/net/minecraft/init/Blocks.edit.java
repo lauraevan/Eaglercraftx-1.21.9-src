@@ -7,7 +7,7 @@
 
 > DELETE  34  @  34 : 35
 
-> CHANGE  3 : 214  @  3 : 201
+> CHANGE  3 : 255  @  3 : 201
 
 ~ 	public static Block air;
 ~ 	public static Block stone;
@@ -199,33 +199,99 @@
 ~ 	public static Block quartz_bricks;
 ~ 	public static Block crying_obsidian;
 ~ 	public static Block purpur_block;
-~ 	public static Block barrier;
-~ 	public static Block iron_trapdoor;
-~ 	public static Block hay_block;
-~ 	public static Block carpet;
-~ 	public static Block hardened_clay;
-~ 	public static Block coal_block;
-~ 	public static Block packed_ice;
-~ 	public static Block acacia_stairs;
-~ 	public static Block dark_oak_stairs;
-~ 	public static Block slime_block;
-~ 	public static BlockDoublePlant double_plant;
-~ 	public static BlockStainedGlass stained_glass;
-~ 	public static BlockStainedGlassPane stained_glass_pane;
-~ 	public static Block prismarine;
-~ 	public static Block sea_lantern;
-~ 	public static Block standing_banner;
-~ 	public static Block wall_banner;
-~ 	public static Block red_sandstone;
-~ 	public static Block red_sandstone_stairs;
-~ 	public static BlockSlab double_stone_slab2;
-~ 	public static BlockSlab stone_slab2;
+~ 	public static Block amethyst_block;
+~ 	public static Block calcite;
+~ 	public static Block tuff;
+~ 	public static Block tuff_bricks;
+~ 	public static Block polished_tuff;
+~ 	public static Block dripstone_block;
+~ 	public static Block moss_block;
+~ 	public static Block mud;
+~ 	public static Block packed_mud;
+~ 	public static Block mud_bricks;
+~ 	public static Block smooth_basalt;
+~ 	public static Block netherite_block;
+~ 	public static Block raw_iron_block;
+~ 	public static Block raw_copper_block;
+~ 	public static Block raw_gold_block;
+~ 	public static Block copper_block;
+~ 	public static Block exposed_copper;
+~ 	public static Block weathered_copper;
+~ 	public static Block oxidized_copper;
+~ 	public static Block chiseled_copper;
+~ 	public static Block cut_copper;
+~ 	public static Block exposed_cut_copper;
+~ 	public static Block weathered_cut_copper;
+~ 	public static Block oxidized_cut_copper;
+~ 	public static Block honeycomb_block;
+~ 	public static Block nether_wart_block;
+~ 	public static Block warped_wart_block;
+~ 	public static Block shroomlight;
+~ 	public static Block soul_soil;
+~ 	public static Block gilded_blackstone;
+~ 	public static Block chiseled_polished_blackstone;
+~ 	public static Block cracked_polished_blackstone_bricks;
+~ 	public static Block chiseled_deepslate;
+~ 	public static Block cracked_deepslate_bricks;
+~ 	public static Block cracked_deepslate_tiles;
+~ 	public static Block chiseled_nether_bricks;
+~ 	public static Block cracked_nether_bricks;
+~ 	public static Block red_nether_bricks;
+~ 	public static Block blue_ice;
+~ 	public static Block sculk;
+~ 	public static Block crimson_planks;
+~ 	public static Block warped_planks;
+~ 	public static Block mangrove_planks;
+~ 	public static Block cherry_planks;
+~ 	public static Block bamboo_planks;
+~ 	public static Block pale_oak_planks;
+~ 	public static Block resin_block;
+~ 	public static Block resin_bricks;
+~ 	public static Block chiseled_resin_bricks;
+~ 	public static Block prismarine_bricks;
+~ 	public static Block deepslate;
+~ 	public static Block basalt;
+~ 	public static Block crimson_stem;
+~ 	public static Block warped_stem;
+~ 	public static Block mangrove_log;
+~ 	public static Block cherry_log;
+~ 	public static Block purpur_pillar;
+~ 	public static Block ochre_froglight;
+~ 	public static Block verdant_froglight;
+~ 	public static Block pearlescent_froglight;
+~ 	public static Block bone_block;
+~ 	public static Block bamboo_block;
 
-> CHANGE  5 : 6  @  5 : 6
+> INSERT  1 : 23  @  1
+
++ 	public static Block barrier;
++ 	public static Block iron_trapdoor;
++ 	public static Block hay_block;
++ 	public static Block carpet;
++ 	public static Block hardened_clay;
++ 	public static Block coal_block;
++ 	public static Block packed_ice;
++ 	public static Block acacia_stairs;
++ 	public static Block dark_oak_stairs;
++ 	public static Block slime_block;
++ 	public static BlockDoublePlant double_plant;
++ 	public static BlockStainedGlass stained_glass;
++ 	public static BlockStainedGlassPane stained_glass_pane;
++ 	public static Block prismarine;
++ 	public static Block sea_lantern;
++ 	public static Block standing_banner;
++ 	public static Block wall_banner;
++ 	public static Block red_sandstone;
++ 	public static Block red_sandstone_stairs;
++ 	public static BlockSlab double_stone_slab2;
++ 	public static BlockSlab stone_slab2;
++ 
+
+> CHANGE  4 : 5  @  4 : 5
 
 ~ 	static void doBootstrap() {
 
-> INSERT  180 : 193  @  180
+> INSERT  180 : 256  @  180
 
 + 			concrete = getRegisteredBlock("concrete");
 + 			smooth_stone = getRegisteredBlock("smooth_stone");
@@ -240,5 +306,68 @@
 + 			quartz_bricks = getRegisteredBlock("quartz_bricks");
 + 			crying_obsidian = getRegisteredBlock("crying_obsidian");
 + 			purpur_block = getRegisteredBlock("purpur_block");
++ 			amethyst_block = getRegisteredBlock("amethyst_block");
++ 			calcite = getRegisteredBlock("calcite");
++ 			tuff = getRegisteredBlock("tuff");
++ 			tuff_bricks = getRegisteredBlock("tuff_bricks");
++ 			polished_tuff = getRegisteredBlock("polished_tuff");
++ 			dripstone_block = getRegisteredBlock("dripstone_block");
++ 			moss_block = getRegisteredBlock("moss_block");
++ 			mud = getRegisteredBlock("mud");
++ 			packed_mud = getRegisteredBlock("packed_mud");
++ 			mud_bricks = getRegisteredBlock("mud_bricks");
++ 			smooth_basalt = getRegisteredBlock("smooth_basalt");
++ 			netherite_block = getRegisteredBlock("netherite_block");
++ 			raw_iron_block = getRegisteredBlock("raw_iron_block");
++ 			raw_copper_block = getRegisteredBlock("raw_copper_block");
++ 			raw_gold_block = getRegisteredBlock("raw_gold_block");
++ 			copper_block = getRegisteredBlock("copper_block");
++ 			exposed_copper = getRegisteredBlock("exposed_copper");
++ 			weathered_copper = getRegisteredBlock("weathered_copper");
++ 			oxidized_copper = getRegisteredBlock("oxidized_copper");
++ 			chiseled_copper = getRegisteredBlock("chiseled_copper");
++ 			cut_copper = getRegisteredBlock("cut_copper");
++ 			exposed_cut_copper = getRegisteredBlock("exposed_cut_copper");
++ 			weathered_cut_copper = getRegisteredBlock("weathered_cut_copper");
++ 			oxidized_cut_copper = getRegisteredBlock("oxidized_cut_copper");
++ 			honeycomb_block = getRegisteredBlock("honeycomb_block");
++ 			nether_wart_block = getRegisteredBlock("nether_wart_block");
++ 			warped_wart_block = getRegisteredBlock("warped_wart_block");
++ 			shroomlight = getRegisteredBlock("shroomlight");
++ 			soul_soil = getRegisteredBlock("soul_soil");
++ 			gilded_blackstone = getRegisteredBlock("gilded_blackstone");
++ 			chiseled_polished_blackstone = getRegisteredBlock("chiseled_polished_blackstone");
++ 			cracked_polished_blackstone_bricks = getRegisteredBlock("cracked_polished_blackstone_bricks");
++ 			chiseled_deepslate = getRegisteredBlock("chiseled_deepslate");
++ 			cracked_deepslate_bricks = getRegisteredBlock("cracked_deepslate_bricks");
++ 			cracked_deepslate_tiles = getRegisteredBlock("cracked_deepslate_tiles");
++ 			chiseled_nether_bricks = getRegisteredBlock("chiseled_nether_bricks");
++ 			cracked_nether_bricks = getRegisteredBlock("cracked_nether_bricks");
++ 			red_nether_bricks = getRegisteredBlock("red_nether_bricks");
++ 			blue_ice = getRegisteredBlock("blue_ice");
++ 			sculk = getRegisteredBlock("sculk");
++ 			crimson_planks = getRegisteredBlock("crimson_planks");
++ 			warped_planks = getRegisteredBlock("warped_planks");
++ 			mangrove_planks = getRegisteredBlock("mangrove_planks");
++ 			cherry_planks = getRegisteredBlock("cherry_planks");
++ 			bamboo_planks = getRegisteredBlock("bamboo_planks");
++ 			pale_oak_planks = getRegisteredBlock("pale_oak_planks");
++ 			resin_block = getRegisteredBlock("resin_block");
++ 			resin_bricks = getRegisteredBlock("resin_bricks");
++ 			chiseled_resin_bricks = getRegisteredBlock("chiseled_resin_bricks");
++ 			prismarine_bricks = getRegisteredBlock("prismarine_bricks");
++ 			deepslate = getRegisteredBlock("deepslate");
++ 			basalt = getRegisteredBlock("basalt");
++ 			crimson_stem = getRegisteredBlock("crimson_stem");
++ 			warped_stem = getRegisteredBlock("warped_stem");
++ 			mangrove_log = getRegisteredBlock("mangrove_log");
++ 			cherry_log = getRegisteredBlock("cherry_log");
++ 			purpur_pillar = getRegisteredBlock("purpur_pillar");
++ 			ochre_froglight = getRegisteredBlock("ochre_froglight");
++ 			verdant_froglight = getRegisteredBlock("verdant_froglight");
++ 			pearlescent_froglight = getRegisteredBlock("pearlescent_froglight");
++ 			bone_block = getRegisteredBlock("bone_block");
++ 			bamboo_block = getRegisteredBlock("bamboo_block");
++ 
 
 > EOF

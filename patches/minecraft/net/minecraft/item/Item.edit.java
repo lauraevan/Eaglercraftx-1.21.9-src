@@ -28,7 +28,7 @@
 
 ~ 	protected static EaglercraftRandom itemRand = new EaglercraftRandom();
 
-> INSERT  470 : 483  @  470
+> INSERT  470 : 546  @  470
 
 + 		registerItemBlock(Blocks.concrete, (new ItemCloth(Blocks.concrete)).setUnlocalizedName("concrete"));
 + 		registerItemBlock(Blocks.smooth_stone);
@@ -43,6 +43,69 @@
 + 		registerItemBlock(Blocks.quartz_bricks);
 + 		registerItemBlock(Blocks.crying_obsidian);
 + 		registerItemBlock(Blocks.purpur_block);
++ 		registerItemBlock(Blocks.amethyst_block);
++ 		registerItemBlock(Blocks.calcite);
++ 		registerItemBlock(Blocks.tuff);
++ 		registerItemBlock(Blocks.tuff_bricks);
++ 		registerItemBlock(Blocks.polished_tuff);
++ 		registerItemBlock(Blocks.dripstone_block);
++ 		registerItemBlock(Blocks.moss_block);
++ 		registerItemBlock(Blocks.mud);
++ 		registerItemBlock(Blocks.packed_mud);
++ 		registerItemBlock(Blocks.mud_bricks);
++ 		registerItemBlock(Blocks.smooth_basalt);
++ 		registerItemBlock(Blocks.netherite_block);
++ 		registerItemBlock(Blocks.raw_iron_block);
++ 		registerItemBlock(Blocks.raw_copper_block);
++ 		registerItemBlock(Blocks.raw_gold_block);
++ 		registerItemBlock(Blocks.copper_block);
++ 		registerItemBlock(Blocks.exposed_copper);
++ 		registerItemBlock(Blocks.weathered_copper);
++ 		registerItemBlock(Blocks.oxidized_copper);
++ 		registerItemBlock(Blocks.chiseled_copper);
++ 		registerItemBlock(Blocks.cut_copper);
++ 		registerItemBlock(Blocks.exposed_cut_copper);
++ 		registerItemBlock(Blocks.weathered_cut_copper);
++ 		registerItemBlock(Blocks.oxidized_cut_copper);
++ 		registerItemBlock(Blocks.honeycomb_block);
++ 		registerItemBlock(Blocks.nether_wart_block);
++ 		registerItemBlock(Blocks.warped_wart_block);
++ 		registerItemBlock(Blocks.shroomlight);
++ 		registerItemBlock(Blocks.soul_soil);
++ 		registerItemBlock(Blocks.gilded_blackstone);
++ 		registerItemBlock(Blocks.chiseled_polished_blackstone);
++ 		registerItemBlock(Blocks.cracked_polished_blackstone_bricks);
++ 		registerItemBlock(Blocks.chiseled_deepslate);
++ 		registerItemBlock(Blocks.cracked_deepslate_bricks);
++ 		registerItemBlock(Blocks.cracked_deepslate_tiles);
++ 		registerItemBlock(Blocks.chiseled_nether_bricks);
++ 		registerItemBlock(Blocks.cracked_nether_bricks);
++ 		registerItemBlock(Blocks.red_nether_bricks);
++ 		registerItemBlock(Blocks.blue_ice);
++ 		registerItemBlock(Blocks.sculk);
++ 		registerItemBlock(Blocks.crimson_planks);
++ 		registerItemBlock(Blocks.warped_planks);
++ 		registerItemBlock(Blocks.mangrove_planks);
++ 		registerItemBlock(Blocks.cherry_planks);
++ 		registerItemBlock(Blocks.bamboo_planks);
++ 		registerItemBlock(Blocks.pale_oak_planks);
++ 		registerItemBlock(Blocks.resin_block);
++ 		registerItemBlock(Blocks.resin_bricks);
++ 		registerItemBlock(Blocks.chiseled_resin_bricks);
++ 		registerItemBlock(Blocks.prismarine_bricks);
++ 		registerItemBlock(Blocks.deepslate);
++ 		registerItemBlock(Blocks.basalt);
++ 		registerItemBlock(Blocks.crimson_stem);
++ 		registerItemBlock(Blocks.warped_stem);
++ 		registerItemBlock(Blocks.mangrove_log);
++ 		registerItemBlock(Blocks.cherry_log);
++ 		registerItemBlock(Blocks.purpur_pillar);
++ 		registerItemBlock(Blocks.ochre_froglight);
++ 		registerItemBlock(Blocks.verdant_froglight);
++ 		registerItemBlock(Blocks.pearlescent_froglight);
++ 		registerItemBlock(Blocks.bone_block);
++ 		registerItemBlock(Blocks.bamboo_block);
++ 
 
 > INSERT  414 : 422  @  414
 

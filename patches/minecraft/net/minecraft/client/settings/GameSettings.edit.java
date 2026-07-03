@@ -165,7 +165,7 @@
 
 > CHANGE  2 : 4  @  2 : 10
 
-~ 		this.renderDistanceChunks = 4;
+~ 		this.renderDistanceChunks = 6;
 ~ 		this.screenRecordCodec = ScreenRecordingController.getDefaultCodec();
 
 > DELETE  3  @  3 : 18

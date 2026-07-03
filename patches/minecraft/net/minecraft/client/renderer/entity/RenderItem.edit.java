@@ -173,7 +173,7 @@
 
 + 		// GlStateManager.cullFace(flag ? GL_FRONT : GL_BACK);
 
-> INSERT  301 : 329  @  301
+> INSERT  301 : 392  @  301
 
 + 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLACK.getMetadata(), "black_concrete");
 + 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLUE.getMetadata(), "blue_concrete");
@@ -203,5 +203,68 @@
 + 		this.registerBlock(Blocks.quartz_bricks, "quartz_bricks");
 + 		this.registerBlock(Blocks.crying_obsidian, "crying_obsidian");
 + 		this.registerBlock(Blocks.purpur_block, "purpur_block");
++ 		this.registerBlock(Blocks.amethyst_block, "amethyst_block");
++ 		this.registerBlock(Blocks.calcite, "calcite");
++ 		this.registerBlock(Blocks.tuff, "tuff");
++ 		this.registerBlock(Blocks.tuff_bricks, "tuff_bricks");
++ 		this.registerBlock(Blocks.polished_tuff, "polished_tuff");
++ 		this.registerBlock(Blocks.dripstone_block, "dripstone_block");
++ 		this.registerBlock(Blocks.moss_block, "moss_block");
++ 		this.registerBlock(Blocks.mud, "mud");
++ 		this.registerBlock(Blocks.packed_mud, "packed_mud");
++ 		this.registerBlock(Blocks.mud_bricks, "mud_bricks");
++ 		this.registerBlock(Blocks.smooth_basalt, "smooth_basalt");
++ 		this.registerBlock(Blocks.netherite_block, "netherite_block");
++ 		this.registerBlock(Blocks.raw_iron_block, "raw_iron_block");
++ 		this.registerBlock(Blocks.raw_copper_block, "raw_copper_block");
++ 		this.registerBlock(Blocks.raw_gold_block, "raw_gold_block");
++ 		this.registerBlock(Blocks.copper_block, "copper_block");
++ 		this.registerBlock(Blocks.exposed_copper, "exposed_copper");
++ 		this.registerBlock(Blocks.weathered_copper, "weathered_copper");
++ 		this.registerBlock(Blocks.oxidized_copper, "oxidized_copper");
++ 		this.registerBlock(Blocks.chiseled_copper, "chiseled_copper");
++ 		this.registerBlock(Blocks.cut_copper, "cut_copper");
++ 		this.registerBlock(Blocks.exposed_cut_copper, "exposed_cut_copper");
++ 		this.registerBlock(Blocks.weathered_cut_copper, "weathered_cut_copper");
++ 		this.registerBlock(Blocks.oxidized_cut_copper, "oxidized_cut_copper");
++ 		this.registerBlock(Blocks.honeycomb_block, "honeycomb_block");
++ 		this.registerBlock(Blocks.nether_wart_block, "nether_wart_block");
++ 		this.registerBlock(Blocks.warped_wart_block, "warped_wart_block");
++ 		this.registerBlock(Blocks.shroomlight, "shroomlight");
++ 		this.registerBlock(Blocks.soul_soil, "soul_soil");
++ 		this.registerBlock(Blocks.gilded_blackstone, "gilded_blackstone");
++ 		this.registerBlock(Blocks.chiseled_polished_blackstone, "chiseled_polished_blackstone");
++ 		this.registerBlock(Blocks.cracked_polished_blackstone_bricks, "cracked_polished_blackstone_bricks");
++ 		this.registerBlock(Blocks.chiseled_deepslate, "chiseled_deepslate");
++ 		this.registerBlock(Blocks.cracked_deepslate_bricks, "cracked_deepslate_bricks");
++ 		this.registerBlock(Blocks.cracked_deepslate_tiles, "cracked_deepslate_tiles");
++ 		this.registerBlock(Blocks.chiseled_nether_bricks, "chiseled_nether_bricks");
++ 		this.registerBlock(Blocks.cracked_nether_bricks, "cracked_nether_bricks");
++ 		this.registerBlock(Blocks.red_nether_bricks, "red_nether_bricks");
++ 		this.registerBlock(Blocks.blue_ice, "blue_ice");
++ 		this.registerBlock(Blocks.sculk, "sculk");
++ 		this.registerBlock(Blocks.crimson_planks, "crimson_planks");
++ 		this.registerBlock(Blocks.warped_planks, "warped_planks");
++ 		this.registerBlock(Blocks.mangrove_planks, "mangrove_planks");
++ 		this.registerBlock(Blocks.cherry_planks, "cherry_planks");
++ 		this.registerBlock(Blocks.bamboo_planks, "bamboo_planks");
++ 		this.registerBlock(Blocks.pale_oak_planks, "pale_oak_planks");
++ 		this.registerBlock(Blocks.resin_block, "resin_block");
++ 		this.registerBlock(Blocks.resin_bricks, "resin_bricks");
++ 		this.registerBlock(Blocks.chiseled_resin_bricks, "chiseled_resin_bricks");
++ 		this.registerBlock(Blocks.prismarine_bricks, "prismarine_bricks");
++ 		this.registerBlock(Blocks.deepslate, "deepslate");
++ 		this.registerBlock(Blocks.basalt, "basalt");
++ 		this.registerBlock(Blocks.crimson_stem, "crimson_stem");
++ 		this.registerBlock(Blocks.warped_stem, "warped_stem");
++ 		this.registerBlock(Blocks.mangrove_log, "mangrove_log");
++ 		this.registerBlock(Blocks.cherry_log, "cherry_log");
++ 		this.registerBlock(Blocks.purpur_pillar, "purpur_pillar");
++ 		this.registerBlock(Blocks.ochre_froglight, "ochre_froglight");
++ 		this.registerBlock(Blocks.verdant_froglight, "verdant_froglight");
++ 		this.registerBlock(Blocks.pearlescent_froglight, "pearlescent_froglight");
++ 		this.registerBlock(Blocks.bone_block, "bone_block");
++ 		this.registerBlock(Blocks.bamboo_block, "bamboo_block");
++ 
 
 > EOF
