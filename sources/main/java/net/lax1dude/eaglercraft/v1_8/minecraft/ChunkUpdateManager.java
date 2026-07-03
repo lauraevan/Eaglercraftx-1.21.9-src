@@ -102,6 +102,16 @@ public class ChunkUpdateManager {
 		}else {
 			boolean flag = false;
 			long millis = EagRuntime.steadyTimeMillis();
+			// The default deadline only leaves time for about one rebuild per
+			// frame; when the queue is backed up (loading new terrain) allow a
+			// 5ms drain window so the world fills in quickly instead of
+			// trickling in one section at a time
+			if(queue.size() > 10) {
+				long minDeadline = EagRuntime.nanoTime() + 5000000l;
+				if(timeout < minDeadline) {
+					timeout = minDeadline;
+				}
+			}
 			List<ChunkCompileTaskGenerator> droppedUpdates = new LinkedList<>();
 			while(!queue.isEmpty()) {
 				ChunkCompileTaskGenerator generator = queue.remove(0);

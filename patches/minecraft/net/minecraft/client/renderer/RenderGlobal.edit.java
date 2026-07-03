@@ -1,6 +1,6 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
@@ -592,16 +592,25 @@
 
 > DELETE  22  @  22 : 23
 
-> CHANGE  3 : 6  @  3 : 4
+> CHANGE  3 : 13  @  3 : 4
 
+~ 		// Up to 27 nearby sections can qualify as "important" in the same
+~ 		// frame (crossing a chunk border, breaking a block on a section
+~ 		// corner), and rebuilding each one synchronously here causes a
+~ 		// visible lag spike; rebuild at most 2 per frame and defer the
+~ 		// rest to the time-budgeted update queue
+~ 		int immediateUpdates = 0;
+~ 
 ~ 		for (int ii = 0, ll = this.renderInfos.size(); ii < ll; ++ii) {
 ~ 			RenderGlobal.ContainerLocalRenderInformation renderglobal$containerlocalrenderinformation2 = this.renderInfos
 ~ 					.get(ii);
 
-> CHANGE  3 : 5  @  3 : 5
+> CHANGE  3 : 7  @  3 : 5
 
-~ 				if (this.mc.gameSettings.chunkFix ? this.isPositionInRenderChunkHack(blockpos1, renderchunk4)
-~ 						: this.isPositionInRenderChunk(blockpos, renderchunk4)) {
+~ 				if (immediateUpdates < 2
+~ 						&& (this.mc.gameSettings.chunkFix ? this.isPositionInRenderChunkHack(blockpos1, renderchunk4)
+~ 								: this.isPositionInRenderChunk(blockpos, renderchunk4))) {
+~ 					++immediateUpdates;
 
 > DELETE  2  @  2 : 3
 
