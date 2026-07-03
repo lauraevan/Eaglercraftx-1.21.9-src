@@ -266,10 +266,15 @@
 ~ 					mc.gameSettings.shaders = false;
 ~ 				}
 
-> INSERT  2 : 6  @  2
+> INSERT  2 : 11  @  2
 
-+ 			Blocks.leaves.setGraphicsLevel(mc.gameSettings.shaders || mc.gameSettings.fancyGraphics);
-+ 			Blocks.leaves2.setGraphicsLevel(mc.gameSettings.shaders || mc.gameSettings.fancyGraphics);
++ 			// Always render leaves as fancy (transparent) regardless of the
++ 			// graphics setting; the modern leaf textures have large
++ 			// transparent areas that render as black patches when leaves are
++ 			// opaque, and fancy leaves alone cost very little compared to
++ 			// full fancy graphics
++ 			Blocks.leaves.setGraphicsLevel(true);
++ 			Blocks.leaves2.setGraphicsLevel(true);
 + 			this.renderDistanceChunks = this.mc.gameSettings.renderDistanceChunks;
 + 
 
