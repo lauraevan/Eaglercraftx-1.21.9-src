@@ -104,10 +104,13 @@ public class ChunkUpdateManager {
 			long millis = EagRuntime.steadyTimeMillis();
 			// The default deadline only leaves time for about one rebuild per
 			// frame; when the queue is backed up (loading new terrain) allow a
-			// 5ms drain window so the world fills in quickly instead of
-			// trickling in one section at a time
+			// drain window so the world fills in quickly instead of trickling
+			// in one section at a time; creative mode gets a wider window
+			// because flying outruns terrain far more easily
 			if(queue.size() > 10) {
-				long minDeadline = EagRuntime.nanoTime() + 5000000l;
+				Minecraft mc = Minecraft.getMinecraft();
+				boolean creative = mc.thePlayer != null && mc.thePlayer.capabilities.isCreativeMode;
+				long minDeadline = EagRuntime.nanoTime() + (creative ? 10000000l : 5000000l);
 				if(timeout < minDeadline) {
 					timeout = minDeadline;
 				}
