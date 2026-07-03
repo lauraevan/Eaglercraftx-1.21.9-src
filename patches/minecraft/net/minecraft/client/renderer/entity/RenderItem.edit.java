@@ -1,6 +1,6 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
@@ -172,5 +172,36 @@
 > INSERT  4 : 5  @  4
 
 + 		// GlStateManager.cullFace(flag ? GL_FRONT : GL_BACK);
+
+> INSERT  301 : 329  @  301
+
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLACK.getMetadata(), "black_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLUE.getMetadata(), "blue_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.BROWN.getMetadata(), "brown_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.CYAN.getMetadata(), "cyan_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.GRAY.getMetadata(), "gray_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.GREEN.getMetadata(), "green_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.LIGHT_BLUE.getMetadata(), "light_blue_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.LIME.getMetadata(), "lime_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.MAGENTA.getMetadata(), "magenta_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.ORANGE.getMetadata(), "orange_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.PINK.getMetadata(), "pink_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.PURPLE.getMetadata(), "purple_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.RED.getMetadata(), "red_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.SILVER.getMetadata(), "silver_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.WHITE.getMetadata(), "white_concrete");
++ 		this.registerBlock(Blocks.concrete, EnumDyeColor.YELLOW.getMetadata(), "yellow_concrete");
++ 		this.registerBlock(Blocks.smooth_stone, "smooth_stone");
++ 		this.registerBlock(Blocks.blackstone, "blackstone");
++ 		this.registerBlock(Blocks.polished_blackstone, "polished_blackstone");
++ 		this.registerBlock(Blocks.polished_blackstone_bricks, "polished_blackstone_bricks");
++ 		this.registerBlock(Blocks.cobbled_deepslate, "cobbled_deepslate");
++ 		this.registerBlock(Blocks.polished_deepslate, "polished_deepslate");
++ 		this.registerBlock(Blocks.deepslate_bricks, "deepslate_bricks");
++ 		this.registerBlock(Blocks.deepslate_tiles, "deepslate_tiles");
++ 		this.registerBlock(Blocks.end_stone_bricks, "end_stone_bricks");
++ 		this.registerBlock(Blocks.quartz_bricks, "quartz_bricks");
++ 		this.registerBlock(Blocks.crying_obsidian, "crying_obsidian");
++ 		this.registerBlock(Blocks.purpur_block, "purpur_block");
 
 > EOF

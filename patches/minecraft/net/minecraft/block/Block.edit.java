@@ -1,6 +1,6 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
@@ -47,7 +47,49 @@
 
 + 		bootstrapStates();
 
-> INSERT  468 : 508  @  468
+> INSERT  439 : 478  @  439
+
++ 
++ 		// Opticlient: modern building blocks backported from 1.21
++ 		registerBlock(198, (String) "concrete", (new BlockColored(Material.rock)).setHardness(1.8F).setResistance(9.0F)
++ 				.setStepSound(soundTypeStone).setUnlocalizedName("concrete").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(199, (String) "smooth_stone", (new Block(Material.rock)).setHardness(2.0F).setResistance(10.0F)
++ 				.setStepSound(soundTypeStone).setUnlocalizedName("smooth_stone").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(200, (String) "blackstone", (new Block(Material.rock)).setHardness(1.5F).setResistance(10.0F)
++ 				.setStepSound(soundTypeStone).setUnlocalizedName("blackstone").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(201, (String) "polished_blackstone",
++ 				(new Block(Material.rock)).setHardness(2.0F).setResistance(10.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("polished_blackstone").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(202, (String) "polished_blackstone_bricks",
++ 				(new Block(Material.rock)).setHardness(1.5F).setResistance(10.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("polished_blackstone_bricks").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(203, (String) "cobbled_deepslate",
++ 				(new Block(Material.rock)).setHardness(3.5F).setResistance(10.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("cobbled_deepslate").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(204, (String) "polished_deepslate",
++ 				(new Block(Material.rock)).setHardness(3.5F).setResistance(10.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("polished_deepslate").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(205, (String) "deepslate_bricks",
++ 				(new Block(Material.rock)).setHardness(3.5F).setResistance(10.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("deepslate_bricks").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(206, (String) "deepslate_tiles",
++ 				(new Block(Material.rock)).setHardness(3.5F).setResistance(10.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("deepslate_tiles").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(207, (String) "end_stone_bricks",
++ 				(new Block(Material.rock)).setHardness(3.0F).setResistance(9.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("end_stone_bricks").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(208, (String) "quartz_bricks",
++ 				(new Block(Material.rock)).setHardness(0.8F).setResistance(4.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("quartz_bricks").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(209, (String) "crying_obsidian",
++ 				(new Block(Material.rock)).setHardness(50.0F).setResistance(2000.0F).setStepSound(soundTypeStone)
++ 						.setLightLevel(0.66F).setUnlocalizedName("crying_obsidian")
++ 						.setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(210, (String) "purpur_block", (new Block(Material.rock)).setHardness(1.5F).setResistance(10.0F)
++ 				.setStepSound(soundTypeStone).setUnlocalizedName("purpur_block").setCreativeTab(CreativeTabs.tabBlock));
++ 
+
+> INSERT  29 : 69  @  29
 
 + 	public static void bootstrapStates() {
 + 		BlockBed.bootstrapStates();

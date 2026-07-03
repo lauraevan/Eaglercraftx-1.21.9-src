@@ -1,6 +1,6 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
@@ -28,7 +28,23 @@
 
 ~ 	protected static EaglercraftRandom itemRand = new EaglercraftRandom();
 
-> INSERT  884 : 892  @  884
+> INSERT  470 : 483  @  470
+
++ 		registerItemBlock(Blocks.concrete, (new ItemCloth(Blocks.concrete)).setUnlocalizedName("concrete"));
++ 		registerItemBlock(Blocks.smooth_stone);
++ 		registerItemBlock(Blocks.blackstone);
++ 		registerItemBlock(Blocks.polished_blackstone);
++ 		registerItemBlock(Blocks.polished_blackstone_bricks);
++ 		registerItemBlock(Blocks.cobbled_deepslate);
++ 		registerItemBlock(Blocks.polished_deepslate);
++ 		registerItemBlock(Blocks.deepslate_bricks);
++ 		registerItemBlock(Blocks.deepslate_tiles);
++ 		registerItemBlock(Blocks.end_stone_bricks);
++ 		registerItemBlock(Blocks.quartz_bricks);
++ 		registerItemBlock(Blocks.crying_obsidian);
++ 		registerItemBlock(Blocks.purpur_block);
+
+> INSERT  414 : 422  @  414
 
 + 
 + 	public float getHeldItemBrightnessEagler(ItemStack itemStack) {

@@ -1,13 +1,13 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
 
 > DELETE  34  @  34 : 35
 
-> CHANGE  3 : 201  @  3 : 201
+> CHANGE  3 : 214  @  3 : 201
 
 ~ 	public static Block air;
 ~ 	public static Block stone;
@@ -186,6 +186,19 @@
 ~ 	public static Block activator_rail;
 ~ 	public static Block dropper;
 ~ 	public static Block stained_hardened_clay;
+~ 	public static Block concrete;
+~ 	public static Block smooth_stone;
+~ 	public static Block blackstone;
+~ 	public static Block polished_blackstone;
+~ 	public static Block polished_blackstone_bricks;
+~ 	public static Block cobbled_deepslate;
+~ 	public static Block polished_deepslate;
+~ 	public static Block deepslate_bricks;
+~ 	public static Block deepslate_tiles;
+~ 	public static Block end_stone_bricks;
+~ 	public static Block quartz_bricks;
+~ 	public static Block crying_obsidian;
+~ 	public static Block purpur_block;
 ~ 	public static Block barrier;
 ~ 	public static Block iron_trapdoor;
 ~ 	public static Block hay_block;
@@ -211,5 +224,21 @@
 > CHANGE  5 : 6  @  5 : 6
 
 ~ 	static void doBootstrap() {
+
+> INSERT  180 : 193  @  180
+
++ 			concrete = getRegisteredBlock("concrete");
++ 			smooth_stone = getRegisteredBlock("smooth_stone");
++ 			blackstone = getRegisteredBlock("blackstone");
++ 			polished_blackstone = getRegisteredBlock("polished_blackstone");
++ 			polished_blackstone_bricks = getRegisteredBlock("polished_blackstone_bricks");
++ 			cobbled_deepslate = getRegisteredBlock("cobbled_deepslate");
++ 			polished_deepslate = getRegisteredBlock("polished_deepslate");
++ 			deepslate_bricks = getRegisteredBlock("deepslate_bricks");
++ 			deepslate_tiles = getRegisteredBlock("deepslate_tiles");
++ 			end_stone_bricks = getRegisteredBlock("end_stone_bricks");
++ 			quartz_bricks = getRegisteredBlock("quartz_bricks");
++ 			crying_obsidian = getRegisteredBlock("crying_obsidian");
++ 			purpur_block = getRegisteredBlock("purpur_block");
 
 > EOF

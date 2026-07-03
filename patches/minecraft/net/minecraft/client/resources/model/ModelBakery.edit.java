@@ -1,6 +1,6 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
@@ -126,7 +126,15 @@
 + 	}
 + 
 
-> INSERT  107 : 109  @  107
+> INSERT  66 : 71  @  66
+
++ 		this.variantNames.put(Item.getItemFromBlock(Blocks.concrete),
++ 				Lists.newArrayList(new String[] { "black_concrete", "red_concrete", "green_concrete", "brown_concrete",
++ 						"blue_concrete", "purple_concrete", "cyan_concrete", "silver_concrete", "gray_concrete",
++ 						"pink_concrete", "lime_concrete", "yellow_concrete", "light_blue_concrete", "magenta_concrete",
++ 						"orange_concrete", "white_concrete" }));
+
+> INSERT  41 : 43  @  41
 
 + 		CustomItems.update();
 + 		CustomItems.loadModels(this);
