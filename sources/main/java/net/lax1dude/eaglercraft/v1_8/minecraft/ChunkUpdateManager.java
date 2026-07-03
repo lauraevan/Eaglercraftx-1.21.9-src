@@ -33,6 +33,8 @@ public class ChunkUpdateManager {
 	
 	private final List<ChunkCompileTaskGenerator> queue = new LinkedList<>();
 
+	private boolean skippedLastFrame = false;
+
 	public ChunkUpdateManager() {
 		renderCache = new RegionRenderCacheBuilder();
 	}
@@ -102,6 +104,16 @@ public class ChunkUpdateManager {
 		}else {
 			boolean flag = false;
 			long millis = EagRuntime.steadyTimeMillis();
+			long now = EagRuntime.nanoTime();
+			// If the frame is already far past its deadline (heavy scene or a
+			// synchronous nearby rebuild this frame), skip queued chunk work
+			// so the frame can present instead of stacking another rebuild on
+			// top; never skip two frames in a row so terrain always advances
+			if(!queue.isEmpty() && now > timeout + 4000000l && !skippedLastFrame) {
+				skippedLastFrame = true;
+				return false;
+			}
+			skippedLastFrame = false;
 			// The default deadline only leaves time for about one rebuild per
 			// frame; when the queue is backed up (loading new terrain) allow a
 			// drain window so the world fills in quickly instead of trickling
@@ -110,7 +122,7 @@ public class ChunkUpdateManager {
 			if(queue.size() > 10) {
 				Minecraft mc = Minecraft.getMinecraft();
 				boolean creative = mc.thePlayer != null && mc.thePlayer.capabilities.isCreativeMode;
-				long minDeadline = EagRuntime.nanoTime() + (creative ? 10000000l : 5000000l);
+				long minDeadline = now + (creative ? 10000000l : 5000000l);
 				if(timeout < minDeadline) {
 					timeout = minDeadline;
 				}
