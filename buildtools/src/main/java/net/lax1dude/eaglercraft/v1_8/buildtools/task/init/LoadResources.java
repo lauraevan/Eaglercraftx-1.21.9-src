@@ -84,50 +84,75 @@ public class LoadResources {
 				try {
 					JSONObject json = (new JSONObject(FileUtils.readFileToString(assetsIndexIn, StandardCharsets.UTF_8))).getJSONObject("objects");
 					Iterator<String> itr = json.keys();
-		
-					System.out.println("Downloading assets from 'https://resources.download.minecraft.net/'...");
-					
+
+					String objectsDirProp = System.getProperty("eaglercraft.assetsObjectsDir");
+					File localObjectsDir = objectsDirProp != null ? new File(objectsDirProp)
+							: new File(assetsIndexIn.getParentFile(), "objects");
+					if(localObjectsDir.isDirectory()) {
+						System.out.println("Loading assets from local cache '" + localObjectsDir.getAbsolutePath() + "', missing files will be downloaded...");
+					}else {
+						localObjectsDir = null;
+						System.out.println("Downloading assets from 'https://resources.download.minecraft.net/'...");
+					}
+
 					while(itr.hasNext()) {
 						String name = itr.next();
 						JSONObject obj = json.getJSONObject(name);
-						
-						
+
+
 						ResourceRulesList.ResourceRule r = rules.get(name);
 						if(r.action == ResourceRulesList.Action.EXCLUDE) {
 							System.out.println("Skipping file '" + name + "'");
 							continue;
 						}
-						
+
 						String hash = obj.getString("hash");
 						int len = obj.getInt("size");
-		
-						System.out.println("Downloading '" + name + "' (" + formatByteLength(len) + ") ...");
-						
-						URL url;
-						try {
-							url = new URL("https://resources.download.minecraft.net/" + hash.substring(0, 2) + "/" + hash);
-						}catch(MalformedURLException ex) {
-							System.err.println("Resource file '" + name + "' had an invalid URL!");
-							ex.printStackTrace();
-							continue;
+
+						byte[] downloadedFile = null;
+
+						if(localObjectsDir != null) {
+							File localFile = new File(localObjectsDir, hash.substring(0, 2) + "/" + hash);
+							if(localFile.isFile() && localFile.length() == len) {
+								System.out.println("Loading '" + name + "' (" + formatByteLength(len) + ") from local cache...");
+								try {
+									downloadedFile = FileUtils.readFileToByteArray(localFile);
+								}catch(IOException ex) {
+									System.err.println("Resource file '" + localFile.getAbsolutePath() + "' could not be read, will try downloading!");
+									downloadedFile = null;
+								}
+							}
 						}
-						
-						byte[] downloadedFile = new byte[len];
-						
-						try(InputStream is = url.openStream()) {
-							int dl = 0;
-							int i = 0;
-							while(dl != len && (i = is.read(downloadedFile, dl, len - dl)) > 0) {
-								dl += i;
+
+						if(downloadedFile == null) {
+							System.out.println("Downloading '" + name + "' (" + formatByteLength(len) + ") ...");
+
+							URL url;
+							try {
+								url = new URL("https://resources.download.minecraft.net/" + hash.substring(0, 2) + "/" + hash);
+							}catch(MalformedURLException ex) {
+								System.err.println("Resource file '" + name + "' had an invalid URL!");
+								ex.printStackTrace();
+								continue;
 							}
-							int a = is.available();
-							if(dl != len || a > 0) {
-								throw new IOException("File '" + url.toString() + "' was the wrong length! " + (a > 0 ? "" + a + " bytes remaining" : "" + (len - dl) + " bytes missing"));
+
+							downloadedFile = new byte[len];
+
+							try(InputStream is = url.openStream()) {
+								int dl = 0;
+								int i = 0;
+								while(dl != len && (i = is.read(downloadedFile, dl, len - dl)) > 0) {
+									dl += i;
+								}
+								int a = is.available();
+								if(dl != len || a > 0) {
+									throw new IOException("File '" + url.toString() + "' was the wrong length! " + (a > 0 ? "" + a + " bytes remaining" : "" + (len - dl) + " bytes missing"));
+								}
+							}catch(IOException ex) {
+								System.err.println("Resource file '" + url.toString() + "' could not be downloaded!");
+								ex.printStackTrace();
+								continue;
 							}
-						}catch(IOException ex) {
-							System.err.println("Resource file '" + url.toString() + "' could not be downloaded!");
-							ex.printStackTrace();
-							continue;
 						}
 						
 						if(r.action == ResourceRulesList.Action.ENCODE) {

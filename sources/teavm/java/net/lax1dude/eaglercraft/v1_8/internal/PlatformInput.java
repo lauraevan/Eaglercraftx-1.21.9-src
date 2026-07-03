@@ -104,6 +104,8 @@ public class PlatformInput {
 	private static EventListener<?> pointerlockerr = null;
 	private static EventListener<?> fullscreen = null;
 	private static EventListener<?> visibilitychange = null;
+	private static EventListener<?> windowResize = null;
+	private static EventListener<?> windowScroll = null;
 
 	private static Map<String,LegacyKeycodeTranslator.LegacyKeycode> keyCodeTranslatorMap = null;
 
@@ -211,6 +213,15 @@ public class PlatformInput {
 	private static int lastWasResizedVisualViewportY = -2;
 	private static int lastWasResizedVisualViewportW = -2;
 	private static int lastWasResizedVisualViewportH = -2;
+
+	// Layout reads (clientWidth/clientHeight/offset chain) force reflow, so
+	// they are cached and only refreshed on resize/scroll events or after
+	// windowSizePollRateMillis instead of every frame
+	private static final double windowSizePollRateMillis = 250.0;
+	private static boolean windowSizeStale = true;
+	private static double lastWindowSizePoll = -1000.0;
+	private static int cachedClientWidth = -1;
+	private static int cachedClientHeight = -1;
 
 	private static VMouseEvent currentEvent = null;
 	private static VKeyEvent currentEventK = null;
@@ -643,6 +654,20 @@ public class PlatformInput {
 				PlatformAudio.handleVisibilityChange();
 			}
 		});
+
+		win.addEventListener("resize", windowResize = new EventListener<Event>() {
+			@Override
+			public void handleEvent(Event evt) {
+				windowSizeStale = true;
+			}
+		});
+
+		win.addEventListener("scroll", windowScroll = new EventListener<Event>() {
+			@Override
+			public void handleEvent(Event evt) {
+				windowSizeStale = true;
+			}
+		});
 		
 		try {
 			pointerLockSupported = getSupportedPointerLock(win.getDocument());
@@ -884,14 +909,20 @@ public class PlatformInput {
 	private static double syncTimer = 0.0;
 
 	public static void update(int fpsLimit) {
-		double r = getDevicePixelRatio(win);
-		if(r < 0.01) r = 1.0;
-		windowDPI = (float)r;
-		updateTouchOffset();
-		int w = parent.getClientWidth();
-		int h = parent.getClientHeight();
-		int w2 = windowWidth = (int)(w * r);
-		int h2 = windowHeight = (int)(h * r);
+		double now = PlatformRuntime.steadyTimeMillisTeaVM();
+		if(windowSizeStale || now - lastWindowSizePoll >= windowSizePollRateMillis) {
+			windowSizeStale = false;
+			lastWindowSizePoll = now;
+			double r0 = getDevicePixelRatio(win);
+			if(r0 < 0.01) r0 = 1.0;
+			windowDPI = (float)r0;
+			updateTouchOffset();
+			cachedClientWidth = parent.getClientWidth();
+			cachedClientHeight = parent.getClientHeight();
+		}
+		double r = windowDPI;
+		int w2 = windowWidth = (int)(cachedClientWidth * r);
+		int h2 = windowHeight = (int)(cachedClientHeight * r);
 		if(PlatformRuntime.useVisualViewport) {
 			VisualViewport vv = PlatformRuntime.getVisualViewport();
 			double scale = vv.getScale();
@@ -1539,6 +1570,14 @@ public class PlatformInput {
 		if(fullscreen != null) {
 			TeaVMUtils.removeEventListener(fullscreenQuery, "change", fullscreen);
 			fullscreen = null;
+		}
+		if(windowResize != null) {
+			win.removeEventListener("resize", windowResize);
+			windowResize = null;
+		}
+		if(windowScroll != null) {
+			win.removeEventListener("scroll", windowScroll);
+			windowScroll = null;
 		}
 		if(mouseUngrabTimeout != -1) {
 			Window.clearTimeout(mouseUngrabTimeout);

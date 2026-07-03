@@ -1,6 +1,6 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
@@ -584,11 +584,12 @@
 + 				PointerInputAbstraction.runGameLoop();
 + 			}
 
-> CHANGE  2 : 3  @  2 : 4
+> CHANGE  2 : 6  @  2 : 6
 
 ~ 		long i1 = EagRuntime.nanoTime() - l;
-
-> DELETE  1  @  1 : 2
+~ 		if (this.gameSettings.showDebugInfo) {
+~ 			this.checkGLError("Pre render");
+~ 		}
 
 > CHANGE  1 : 6  @  1 : 3
 
@@ -616,11 +617,12 @@
 
 ~ 
 
-> DELETE  1  @  1 : 9
+> CHANGE  1 : 5  @  1 : 10
 
-> INSERT  1 : 2  @  1
-
-+ 
+~ 		if (this.gameSettings.showDebugInfo) {
+~ 			this.checkGLError("Post render");
+~ 		}
+~ 
 
 > CHANGE  1 : 2  @  1 : 4
 

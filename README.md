@@ -1,7 +1,13 @@
 
-# EaglercraftX 1.8
+# Minecraft: Opticlient (EaglercraftX 1.8)
 
-### Play Minecraft 1.8 in your browser, supports singleplayer and multiplayer
+### Optimization client — play Minecraft 1.8 in your browser at 60 FPS, supports singleplayer and multiplayer
+
+This fork of EaglercraftX 1.8 is tuned for performance ("Opticlient"). Rendering
+hot paths were optimized to remove per-frame GPU synchronization stalls and
+forced browser layout reflows, and the build tools support an offline asset
+cache (`mcp918/objects/`) so the client can be compiled without access to
+Mojang's download servers. All textures, GUIs, and game features are unchanged.
 
 ![EaglercraftX 1.8 Screenshot Main Menu](https://deev.is/eagler/cors/eagler-1.8-u22-titlescreen-480p.png)
 
