@@ -126,13 +126,20 @@
 + 	}
 + 
 
-> INSERT  66 : 71  @  66
+> INSERT  66 : 78  @  66
 
 + 		this.variantNames.put(Item.getItemFromBlock(Blocks.concrete),
 + 				Lists.newArrayList(new String[] { "black_concrete", "red_concrete", "green_concrete", "brown_concrete",
 + 						"blue_concrete", "purple_concrete", "cyan_concrete", "silver_concrete", "gray_concrete",
 + 						"pink_concrete", "lime_concrete", "yellow_concrete", "light_blue_concrete", "magenta_concrete",
 + 						"orange_concrete", "white_concrete" }));
++ 		this.variantNames.put(Item.getItemFromBlock(Blocks.concrete_powder),
++ 				Lists.newArrayList(new String[] { "black_concrete_powder", "red_concrete_powder",
++ 						"green_concrete_powder", "brown_concrete_powder", "blue_concrete_powder",
++ 						"purple_concrete_powder", "cyan_concrete_powder", "silver_concrete_powder",
++ 						"gray_concrete_powder", "pink_concrete_powder", "lime_concrete_powder",
++ 						"yellow_concrete_powder", "light_blue_concrete_powder", "magenta_concrete_powder",
++ 						"orange_concrete_powder", "white_concrete_powder" }));
 
 > INSERT  41 : 43  @  41
 

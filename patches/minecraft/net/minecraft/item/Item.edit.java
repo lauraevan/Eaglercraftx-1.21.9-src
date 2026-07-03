@@ -28,7 +28,7 @@
 
 ~ 	protected static EaglercraftRandom itemRand = new EaglercraftRandom();
 
-> INSERT  470 : 546  @  470
+> INSERT  470 : 558  @  470
 
 + 		registerItemBlock(Blocks.concrete, (new ItemCloth(Blocks.concrete)).setUnlocalizedName("concrete"));
 + 		registerItemBlock(Blocks.smooth_stone);
@@ -105,6 +105,18 @@
 + 		registerItemBlock(Blocks.pearlescent_froglight);
 + 		registerItemBlock(Blocks.bone_block);
 + 		registerItemBlock(Blocks.bamboo_block);
++ 		registerItemBlock(Blocks.concrete_powder,
++ 				(new ItemCloth(Blocks.concrete_powder)).setUnlocalizedName("concretePowder"));
++ 		registerItemBlock(Blocks.copper_ore);
++ 		registerItemBlock(Blocks.deepslate_copper_ore);
++ 		registerItemBlock(Blocks.deepslate_coal_ore);
++ 		registerItemBlock(Blocks.deepslate_iron_ore);
++ 		registerItemBlock(Blocks.deepslate_gold_ore);
++ 		registerItemBlock(Blocks.deepslate_diamond_ore);
++ 		registerItemBlock(Blocks.deepslate_redstone_ore);
++ 		registerItemBlock(Blocks.deepslate_lapis_ore);
++ 		registerItemBlock(Blocks.deepslate_emerald_ore);
++ 		registerItemBlock(Blocks.chiseled_tuff);
 + 
 
 > INSERT  414 : 422  @  414

@@ -5,7 +5,12 @@
 # Version: 1.0
 # Author: lax1dude
 
-> CHANGE  3 : 6  @  3 : 135
+> INSERT  2 : 4  @  2
+
++ import net.lax1dude.eaglercraft.v1_8.opticlient.BlockColoredFalling;
++ 
+
+> CHANGE  1 : 4  @  1 : 133
 
 ~ 
 ~ import net.lax1dude.eaglercraft.v1_8.EaglercraftRandom;
@@ -47,7 +52,7 @@
 
 + 		bootstrapStates();
 
-> INSERT  439 : 645  @  439
+> INSERT  439 : 679  @  439
 
 + 
 + 		// Opticlient: modern building blocks backported from 1.21
@@ -254,6 +259,40 @@
 + 				.setStepSound(soundTypeStone).setUnlocalizedName("bone_block").setCreativeTab(CreativeTabs.tabBlock));
 + 		registerBlock(273, (String) "bamboo_block", (new Block(Material.wood)).setHardness(2.0F).setResistance(3.0F)
 + 				.setStepSound(soundTypeWood).setUnlocalizedName("bamboo_block").setCreativeTab(CreativeTabs.tabBlock));
++ 
++ 		// Opticlient: falling concrete powder + ores
++ 		registerBlock(274, (String) "concrete_powder",
++ 				(new BlockColoredFalling(Material.sand)).setHardness(0.5F).setStepSound(soundTypeSand)
++ 						.setUnlocalizedName("concretePowder").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(275, (String) "copper_ore", (new Block(Material.rock)).setHardness(3.0F).setResistance(3.0F)
++ 				.setStepSound(soundTypeStone).setUnlocalizedName("copper_ore").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(276, (String) "deepslate_copper_ore",
++ 				(new Block(Material.rock)).setHardness(4.5F).setResistance(3.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("deepslate_copper_ore").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(277, (String) "deepslate_coal_ore",
++ 				(new Block(Material.rock)).setHardness(4.5F).setResistance(3.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("deepslate_coal_ore").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(278, (String) "deepslate_iron_ore",
++ 				(new Block(Material.rock)).setHardness(4.5F).setResistance(3.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("deepslate_iron_ore").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(279, (String) "deepslate_gold_ore",
++ 				(new Block(Material.rock)).setHardness(4.5F).setResistance(3.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("deepslate_gold_ore").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(280, (String) "deepslate_diamond_ore",
++ 				(new Block(Material.rock)).setHardness(4.5F).setResistance(3.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("deepslate_diamond_ore").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(281, (String) "deepslate_redstone_ore",
++ 				(new Block(Material.rock)).setHardness(4.5F).setResistance(3.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("deepslate_redstone_ore").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(282, (String) "deepslate_lapis_ore",
++ 				(new Block(Material.rock)).setHardness(4.5F).setResistance(3.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("deepslate_lapis_ore").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(283, (String) "deepslate_emerald_ore",
++ 				(new Block(Material.rock)).setHardness(4.5F).setResistance(3.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("deepslate_emerald_ore").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(284, (String) "chiseled_tuff",
++ 				(new Block(Material.rock)).setHardness(1.5F).setResistance(6.0F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("chiseled_tuff").setCreativeTab(CreativeTabs.tabBlock));
 + 
 
 > INSERT  29 : 69  @  29

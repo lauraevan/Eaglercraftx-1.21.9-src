@@ -173,7 +173,7 @@
 
 + 		// GlStateManager.cullFace(flag ? GL_FRONT : GL_BACK);
 
-> INSERT  301 : 392  @  301
+> INSERT  301 : 418  @  301
 
 + 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLACK.getMetadata(), "black_concrete");
 + 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLUE.getMetadata(), "blue_concrete");
@@ -265,6 +265,32 @@
 + 		this.registerBlock(Blocks.pearlescent_froglight, "pearlescent_froglight");
 + 		this.registerBlock(Blocks.bone_block, "bone_block");
 + 		this.registerBlock(Blocks.bamboo_block, "bamboo_block");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.BLACK.getMetadata(), "black_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.BLUE.getMetadata(), "blue_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.BROWN.getMetadata(), "brown_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.CYAN.getMetadata(), "cyan_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.GRAY.getMetadata(), "gray_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.GREEN.getMetadata(), "green_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.LIGHT_BLUE.getMetadata(), "light_blue_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.LIME.getMetadata(), "lime_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.MAGENTA.getMetadata(), "magenta_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.ORANGE.getMetadata(), "orange_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.PINK.getMetadata(), "pink_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.PURPLE.getMetadata(), "purple_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.RED.getMetadata(), "red_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.SILVER.getMetadata(), "silver_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.WHITE.getMetadata(), "white_concrete_powder");
++ 		this.registerBlock(Blocks.concrete_powder, EnumDyeColor.YELLOW.getMetadata(), "yellow_concrete_powder");
++ 		this.registerBlock(Blocks.copper_ore, "copper_ore");
++ 		this.registerBlock(Blocks.deepslate_copper_ore, "deepslate_copper_ore");
++ 		this.registerBlock(Blocks.deepslate_coal_ore, "deepslate_coal_ore");
++ 		this.registerBlock(Blocks.deepslate_iron_ore, "deepslate_iron_ore");
++ 		this.registerBlock(Blocks.deepslate_gold_ore, "deepslate_gold_ore");
++ 		this.registerBlock(Blocks.deepslate_diamond_ore, "deepslate_diamond_ore");
++ 		this.registerBlock(Blocks.deepslate_redstone_ore, "deepslate_redstone_ore");
++ 		this.registerBlock(Blocks.deepslate_lapis_ore, "deepslate_lapis_ore");
++ 		this.registerBlock(Blocks.deepslate_emerald_ore, "deepslate_emerald_ore");
++ 		this.registerBlock(Blocks.chiseled_tuff, "chiseled_tuff");
 + 
 
 > EOF

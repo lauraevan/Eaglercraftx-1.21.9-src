@@ -7,7 +7,7 @@
 
 > DELETE  34  @  34 : 35
 
-> CHANGE  3 : 255  @  3 : 201
+> CHANGE  3 : 266  @  3 : 201
 
 ~ 	public static Block air;
 ~ 	public static Block stone;
@@ -261,6 +261,17 @@
 ~ 	public static Block pearlescent_froglight;
 ~ 	public static Block bone_block;
 ~ 	public static Block bamboo_block;
+~ 	public static Block concrete_powder;
+~ 	public static Block copper_ore;
+~ 	public static Block deepslate_copper_ore;
+~ 	public static Block deepslate_coal_ore;
+~ 	public static Block deepslate_iron_ore;
+~ 	public static Block deepslate_gold_ore;
+~ 	public static Block deepslate_diamond_ore;
+~ 	public static Block deepslate_redstone_ore;
+~ 	public static Block deepslate_lapis_ore;
+~ 	public static Block deepslate_emerald_ore;
+~ 	public static Block chiseled_tuff;
 
 > INSERT  1 : 23  @  1
 
@@ -291,7 +302,7 @@
 
 ~ 	static void doBootstrap() {
 
-> INSERT  180 : 256  @  180
+> INSERT  180 : 267  @  180
 
 + 			concrete = getRegisteredBlock("concrete");
 + 			smooth_stone = getRegisteredBlock("smooth_stone");
@@ -368,6 +379,17 @@
 + 			pearlescent_froglight = getRegisteredBlock("pearlescent_froglight");
 + 			bone_block = getRegisteredBlock("bone_block");
 + 			bamboo_block = getRegisteredBlock("bamboo_block");
++ 			concrete_powder = getRegisteredBlock("concrete_powder");
++ 			copper_ore = getRegisteredBlock("copper_ore");
++ 			deepslate_copper_ore = getRegisteredBlock("deepslate_copper_ore");
++ 			deepslate_coal_ore = getRegisteredBlock("deepslate_coal_ore");
++ 			deepslate_iron_ore = getRegisteredBlock("deepslate_iron_ore");
++ 			deepslate_gold_ore = getRegisteredBlock("deepslate_gold_ore");
++ 			deepslate_diamond_ore = getRegisteredBlock("deepslate_diamond_ore");
++ 			deepslate_redstone_ore = getRegisteredBlock("deepslate_redstone_ore");
++ 			deepslate_lapis_ore = getRegisteredBlock("deepslate_lapis_ore");
++ 			deepslate_emerald_ore = getRegisteredBlock("deepslate_emerald_ore");
++ 			chiseled_tuff = getRegisteredBlock("chiseled_tuff");
 + 
 
 > EOF
