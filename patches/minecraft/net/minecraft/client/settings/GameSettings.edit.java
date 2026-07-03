@@ -1,6 +1,6 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
@@ -60,14 +60,13 @@
 
 > DELETE  1  @  1 : 9
 
-> CHANGE  22 : 26  @  22 : 26
+> CHANGE  22 : 25  @  22 : 25
 
 ~ 	public int limitFramerate = 260;
 ~ 	public int clouds = 1;
 ~ 	public boolean fancyGraphics = false;
-~ 	public int ambientOcclusion = 0;
 
-> CHANGE  8 : 9  @  8 : 11
+> CHANGE  9 : 10  @  9 : 12
 
 ~ 	public boolean enableVsync = EagRuntime.getPlatformType() != EnumPlatformType.DESKTOP;
 
