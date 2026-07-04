@@ -3591,3 +3591,9 @@ tile.cut_sandstone.name=Cut Sandstone
 tile.chiseled_sandstone.name=Chiseled Sandstone
 tile.red_sand.name=Red Sand
 tile.chiseled_bookshelf_empty.name=Chiseled Bookshelf
+
+# Opticlient: netherite armor
+item.helmetNetherite.name=Netherite Helmet
+item.chestplateNetherite.name=Netherite Chestplate
+item.leggingsNetherite.name=Netherite Leggings
+item.bootsNetherite.name=Netherite Boots

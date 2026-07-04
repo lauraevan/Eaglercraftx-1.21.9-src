@@ -227,7 +227,7 @@
 + 		registerItemBlock(Blocks.chiseled_bookshelf_empty);
 + 
 
-> INSERT  52 : 71  @  52
+> INSERT  52 : 79  @  52
 
 + 		registerItem(432, (String) "raw_copper",
 + 				(new Item()).setUnlocalizedName("rawCopper").setCreativeTab(CreativeTabs.tabMaterials));
@@ -248,6 +248,14 @@
 + 		registerItem(440, (String) "netherite_hoe",
 + 				(new ItemHoe(Item.ToolMaterial.NETHERITE)).setUnlocalizedName("hoeNetherite"));
 + 		registerItem(441, (String) "mace", (new ItemMace(Item.ToolMaterial.NETHERITE)).setUnlocalizedName("mace"));
++ 		registerItem(442, (String) "netherite_helmet",
++ 				(new ItemArmor(ItemArmor.ArmorMaterial.NETHERITE, 3, 0)).setUnlocalizedName("helmetNetherite"));
++ 		registerItem(443, (String) "netherite_chestplate",
++ 				(new ItemArmor(ItemArmor.ArmorMaterial.NETHERITE, 3, 1)).setUnlocalizedName("chestplateNetherite"));
++ 		registerItem(444, (String) "netherite_leggings",
++ 				(new ItemArmor(ItemArmor.ArmorMaterial.NETHERITE, 3, 2)).setUnlocalizedName("leggingsNetherite"));
++ 		registerItem(445, (String) "netherite_boots",
++ 				(new ItemArmor(ItemArmor.ArmorMaterial.NETHERITE, 3, 3)).setUnlocalizedName("bootsNetherite"));
 
 > CHANGE  318 : 319  @  318 : 319
 

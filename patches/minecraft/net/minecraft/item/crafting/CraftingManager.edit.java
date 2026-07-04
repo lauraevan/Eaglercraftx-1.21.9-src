@@ -35,7 +35,7 @@
 + 		this.addRecipe(new ItemStack(Items.copper_ingot, 9),
 + 				new Object[] { "#", Character.valueOf('#'), Blocks.copper_block });
 
-> INSERT  16 : 109  @  16
+> INSERT  16 : 118  @  16
 
 + 
 + 		// Opticlient: recipes for new blocks (real Minecraft obtaining methods)
@@ -130,6 +130,15 @@
 + 				new Object[] { "#", Character.valueOf('#'), Blocks.pumpkin });
 + 		this.addRecipe(new ItemStack(Blocks.jack_o_lantern), new Object[] { "P", "T", Character.valueOf('P'),
 + 				Blocks.carved_pumpkin, Character.valueOf('T'), Blocks.torch });
++ 		// Opticlient: netherite armor recipes
++ 		this.addRecipe(new ItemStack(Items.netherite_helmet),
++ 				new Object[] { "###", "# #", Character.valueOf('#'), Items.netherite_ingot });
++ 		this.addRecipe(new ItemStack(Items.netherite_chestplate),
++ 				new Object[] { "# #", "###", "###", Character.valueOf('#'), Items.netherite_ingot });
++ 		this.addRecipe(new ItemStack(Items.netherite_leggings),
++ 				new Object[] { "###", "# #", "# #", Character.valueOf('#'), Items.netherite_ingot });
++ 		this.addRecipe(new ItemStack(Items.netherite_boots),
++ 				new Object[] { "# #", "# #", Character.valueOf('#'), Items.netherite_ingot });
 
 > CHANGE  67 : 69  @  67 : 68
 

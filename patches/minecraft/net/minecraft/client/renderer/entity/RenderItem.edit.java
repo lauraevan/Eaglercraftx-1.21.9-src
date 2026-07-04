@@ -400,7 +400,7 @@
 + 		this.registerBlock(Blocks.chiseled_bookshelf_empty, "chiseled_bookshelf_empty");
 + 
 
-> INSERT  174 : 184  @  174
+> INSERT  174 : 188  @  174
 
 + 		this.registerItem(Items.raw_copper, "raw_copper");
 + 		this.registerItem(Items.copper_ingot, "copper_ingot");
@@ -412,5 +412,9 @@
 + 		this.registerItem(Items.netherite_axe, "netherite_axe");
 + 		this.registerItem(Items.netherite_hoe, "netherite_hoe");
 + 		this.registerItem(Items.mace, "mace");
++ 		this.registerItem(Items.netherite_helmet, "netherite_helmet");
++ 		this.registerItem(Items.netherite_chestplate, "netherite_chestplate");
++ 		this.registerItem(Items.netherite_leggings, "netherite_leggings");
++ 		this.registerItem(Items.netherite_boots, "netherite_boots");
 
 > EOF
