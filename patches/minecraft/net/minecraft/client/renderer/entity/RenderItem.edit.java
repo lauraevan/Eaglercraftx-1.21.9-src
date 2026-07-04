@@ -173,7 +173,7 @@
 
 + 		// GlStateManager.cullFace(flag ? GL_FRONT : GL_BACK);
 
-> INSERT  301 : 505  @  301
+> INSERT  301 : 525  @  301
 
 + 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLACK.getMetadata(), "black_concrete");
 + 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLUE.getMetadata(), "blue_concrete");
@@ -378,11 +378,39 @@
 + 		this.registerBlock(Blocks.green_terracotta, "green_terracotta");
 + 		this.registerBlock(Blocks.red_terracotta, "red_terracotta");
 + 		this.registerBlock(Blocks.black_terracotta, "black_terracotta");
++ 		this.registerBlock(Blocks.stripped_oak_log, "stripped_oak_log");
++ 		this.registerBlock(Blocks.stripped_spruce_log, "stripped_spruce_log");
++ 		this.registerBlock(Blocks.stripped_birch_log, "stripped_birch_log");
++ 		this.registerBlock(Blocks.stripped_jungle_log, "stripped_jungle_log");
++ 		this.registerBlock(Blocks.stripped_acacia_log, "stripped_acacia_log");
++ 		this.registerBlock(Blocks.stripped_dark_oak_log, "stripped_dark_oak_log");
++ 		this.registerBlock(Blocks.stripped_mangrove_log, "stripped_mangrove_log");
++ 		this.registerBlock(Blocks.stripped_cherry_log, "stripped_cherry_log");
++ 		this.registerBlock(Blocks.stripped_crimson_stem, "stripped_crimson_stem");
++ 		this.registerBlock(Blocks.stripped_warped_stem, "stripped_warped_stem");
++ 		this.registerBlock(Blocks.stripped_bamboo_block, "stripped_bamboo_block");
++ 		this.registerBlock(Blocks.crimson_nylium, "crimson_nylium");
++ 		this.registerBlock(Blocks.warped_nylium, "warped_nylium");
++ 		this.registerBlock(Blocks.melon, "melon");
++ 		this.registerBlock(Blocks.carved_pumpkin, "carved_pumpkin");
++ 		this.registerBlock(Blocks.jack_o_lantern, "jack_o_lantern");
++ 		this.registerBlock(Blocks.cut_sandstone, "cut_sandstone");
++ 		this.registerBlock(Blocks.chiseled_sandstone, "chiseled_sandstone");
++ 		this.registerBlock(Blocks.red_sand, "red_sand");
++ 		this.registerBlock(Blocks.chiseled_bookshelf_empty, "chiseled_bookshelf_empty");
 + 
 
-> INSERT  174 : 176  @  174
+> INSERT  174 : 184  @  174
 
 + 		this.registerItem(Items.raw_copper, "raw_copper");
 + 		this.registerItem(Items.copper_ingot, "copper_ingot");
++ 		this.registerItem(Items.netherite_scrap, "netherite_scrap");
++ 		this.registerItem(Items.netherite_ingot, "netherite_ingot");
++ 		this.registerItem(Items.netherite_sword, "netherite_sword");
++ 		this.registerItem(Items.netherite_shovel, "netherite_shovel");
++ 		this.registerItem(Items.netherite_pickaxe, "netherite_pickaxe");
++ 		this.registerItem(Items.netherite_axe, "netherite_axe");
++ 		this.registerItem(Items.netherite_hoe, "netherite_hoe");
++ 		this.registerItem(Items.mace, "mace");
 
 > EOF

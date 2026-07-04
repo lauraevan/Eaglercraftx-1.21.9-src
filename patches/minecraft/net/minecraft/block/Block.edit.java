@@ -54,7 +54,7 @@
 
 + 		bootstrapStates();
 
-> INSERT  439 : 932  @  439
+> INSERT  439 : 993  @  439
 
 + 
 + 		// Opticlient: modern building blocks backported from 1.21
@@ -548,6 +548,67 @@
 + 		registerBlock(371, (String) "black_terracotta",
 + 				(new Block(Material.clay)).setHardness(1.25F).setResistance(4.2F).setStepSound(soundTypeStone)
 + 						.setUnlocalizedName("black_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 
++ 		// Opticlient: batch 7 - stripped logs, nylium, gourds, sandstone
++ 		registerBlock(372, (String) "stripped_oak_log",
++ 				(new Block(Material.wood)).setHardness(2F).setResistance(3F).setStepSound(soundTypeWood)
++ 						.setUnlocalizedName("stripped_oak_log").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(373, (String) "stripped_spruce_log",
++ 				(new Block(Material.wood)).setHardness(2F).setResistance(3F).setStepSound(soundTypeWood)
++ 						.setUnlocalizedName("stripped_spruce_log").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(374, (String) "stripped_birch_log",
++ 				(new Block(Material.wood)).setHardness(2F).setResistance(3F).setStepSound(soundTypeWood)
++ 						.setUnlocalizedName("stripped_birch_log").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(375, (String) "stripped_jungle_log",
++ 				(new Block(Material.wood)).setHardness(2F).setResistance(3F).setStepSound(soundTypeWood)
++ 						.setUnlocalizedName("stripped_jungle_log").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(376, (String) "stripped_acacia_log",
++ 				(new Block(Material.wood)).setHardness(2F).setResistance(3F).setStepSound(soundTypeWood)
++ 						.setUnlocalizedName("stripped_acacia_log").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(377, (String) "stripped_dark_oak_log",
++ 				(new Block(Material.wood)).setHardness(2F).setResistance(3F).setStepSound(soundTypeWood)
++ 						.setUnlocalizedName("stripped_dark_oak_log").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(378, (String) "stripped_mangrove_log",
++ 				(new Block(Material.wood)).setHardness(2F).setResistance(3F).setStepSound(soundTypeWood)
++ 						.setUnlocalizedName("stripped_mangrove_log").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(379, (String) "stripped_cherry_log",
++ 				(new Block(Material.wood)).setHardness(2F).setResistance(3F).setStepSound(soundTypeWood)
++ 						.setUnlocalizedName("stripped_cherry_log").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(380, (String) "stripped_crimson_stem",
++ 				(new Block(Material.wood)).setHardness(2F).setResistance(3F).setStepSound(soundTypeWood)
++ 						.setUnlocalizedName("stripped_crimson_stem").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(381, (String) "stripped_warped_stem",
++ 				(new Block(Material.wood)).setHardness(2F).setResistance(3F).setStepSound(soundTypeWood)
++ 						.setUnlocalizedName("stripped_warped_stem").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(382, (String) "stripped_bamboo_block",
++ 				(new Block(Material.wood)).setHardness(2F).setResistance(3F).setStepSound(soundTypeWood)
++ 						.setUnlocalizedName("stripped_bamboo_block").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(383, (String) "crimson_nylium",
++ 				(new Block(Material.rock)).setHardness(0.4F).setResistance(0.4F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("crimson_nylium").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(384, (String) "warped_nylium",
++ 				(new Block(Material.rock)).setHardness(0.4F).setResistance(0.4F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("warped_nylium").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(385, (String) "melon", (new Block(Material.gourd)).setHardness(1F).setResistance(1F)
++ 				.setStepSound(soundTypeWood).setUnlocalizedName("melon").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(386, (String) "carved_pumpkin",
++ 				(new Block(Material.gourd)).setHardness(1F).setResistance(1F).setStepSound(soundTypeWood)
++ 						.setUnlocalizedName("carved_pumpkin").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(387, (String) "jack_o_lantern",
++ 				(new Block(Material.gourd)).setHardness(1F).setResistance(1F).setStepSound(soundTypeWood)
++ 						.setLightLevel(1.0F).setUnlocalizedName("jack_o_lantern")
++ 						.setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(388, (String) "cut_sandstone",
++ 				(new Block(Material.rock)).setHardness(0.8F).setResistance(0.8F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("cut_sandstone").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(389, (String) "chiseled_sandstone",
++ 				(new Block(Material.rock)).setHardness(0.8F).setResistance(0.8F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("chiseled_sandstone").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(390, (String) "red_sand", (new Block(Material.sand)).setHardness(0.5F).setResistance(0.5F)
++ 				.setStepSound(soundTypeSand).setUnlocalizedName("red_sand").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(391, (String) "chiseled_bookshelf_empty",
++ 				(new Block(Material.wood)).setHardness(1.5F).setResistance(1.5F).setStepSound(soundTypeWood)
++ 						.setUnlocalizedName("chiseled_bookshelf_empty").setCreativeTab(CreativeTabs.tabBlock));
 + 
 
 > INSERT  29 : 69  @  29

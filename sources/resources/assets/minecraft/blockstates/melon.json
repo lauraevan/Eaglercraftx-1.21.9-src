@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "melon"
+        },
+        "axis=z": {
+            "model": "melon",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "melon",
+            "x": 90,
+            "y": 90
+        },
+        "normal": {
+            "model": "melon"
+        }
+    }
+}

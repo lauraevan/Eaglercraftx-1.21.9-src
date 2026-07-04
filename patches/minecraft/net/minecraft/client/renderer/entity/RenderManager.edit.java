@@ -5,9 +5,11 @@
 # Version: 1.0
 # Author: lax1dude
 
-> CHANGE  2 : 8  @  2 : 3
+> CHANGE  2 : 10  @  2 : 3
 
 ~ import net.lax1dude.eaglercraft.v1_8.opticlient.RenderFrog;
+~ import net.lax1dude.eaglercraft.v1_8.opticlient.RenderCopperGolem;
+~ import net.lax1dude.eaglercraft.v1_8.opticlient.EntityCopperGolem;
 ~ 
 ~ import net.lax1dude.eaglercraft.v1_8.opticlient.EntityFrog;
 ~ import net.lax1dude.eaglercraft.v1_8.opticlient.RenderWarden;
@@ -41,10 +43,11 @@
 
 + 	private RenderPlayer eaglerRenderer;
 
-> INSERT  30 : 32  @  30
+> INSERT  30 : 33  @  30
 
 + 		this.entityRenderMap.put(EntityFrog.class, new RenderFrog(this));
 + 		this.entityRenderMap.put(EntityWarden.class, new RenderWarden(this));
++ 		this.entityRenderMap.put(EntityCopperGolem.class, new RenderCopperGolem(this));
 
 > CHANGE  52 : 62  @  52 : 53
 

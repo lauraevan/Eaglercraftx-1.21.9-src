@@ -5,8 +5,9 @@
 # Version: 1.0
 # Author: lax1dude
 
-> CHANGE  2 : 5  @  2 : 4
+> CHANGE  2 : 6  @  2 : 4
 
+~ import net.lax1dude.eaglercraft.v1_8.opticlient.EntityCopperGolem;
 ~ import net.lax1dude.eaglercraft.v1_8.opticlient.EntityFrog;
 ~ import net.lax1dude.eaglercraft.v1_8.opticlient.EntityWarden;
 ~ 
@@ -179,7 +180,7 @@
 + 		} else {
 + 			arraylist.addAll(set);
 
-> CHANGE  22 : 92  @  22 : 84
+> CHANGE  22 : 93  @  22 : 84
 
 ~ 		addMapping(EntityItem.class, EntityItem::new, "Item", 1);
 ~ 		addMapping(EntityXPOrb.class, EntityXPOrb::new, "XPOrb", 2);
@@ -249,6 +250,7 @@
 ~ 		addMapping(EntityRabbit.class, EntityRabbit::new, "Rabbit", 101, 10051392, 7555121);
 ~ 		addMapping(EntityFrog.class, EntityFrog::new, "Frog", 130, 5143098, 13541416);
 ~ 		addMapping(EntityWarden.class, EntityWarden::new, "Warden", 131, 1315860, 1552847);
+~ 		addMapping(EntityCopperGolem.class, EntityCopperGolem::new, "CopperGolem", 132, 12611662, 8014904);
 ~ 		addMapping(EntityVillager.class, EntityVillager::new, "Villager", 120, 5651507, 12422002);
 ~ 		addMapping(EntityEnderCrystal.class, EntityEnderCrystal::new, "EnderCrystal", 200);
 

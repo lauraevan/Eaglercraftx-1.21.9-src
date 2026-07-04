@@ -35,7 +35,7 @@
 + 		this.addRecipe(new ItemStack(Items.copper_ingot, 9),
 + 				new Object[] { "#", Character.valueOf('#'), Blocks.copper_block });
 
-> INSERT  16 : 82  @  16
+> INSERT  16 : 109  @  16
 
 + 
 + 		// Opticlient: recipes for new blocks (real Minecraft obtaining methods)
@@ -103,6 +103,33 @@
 + 				Character.valueOf('#'), Blocks.terracotta, Character.valueOf('d'), new ItemStack(Items.dye, 1, 1) });
 + 		this.addRecipe(new ItemStack(Blocks.black_terracotta, 8), new Object[] { "###", "#d#", "###",
 + 				Character.valueOf('#'), Blocks.terracotta, Character.valueOf('d'), new ItemStack(Items.dye, 1, 0) });
++ 
++ 		// Opticlient: netherite tools + mace recipes
++ 		this.addShapelessRecipe(new ItemStack(Items.netherite_ingot),
++ 				new Object[] { Items.netherite_scrap, Items.netherite_scrap, Items.netherite_scrap,
++ 						Items.netherite_scrap, Items.gold_ingot, Items.gold_ingot, Items.gold_ingot,
++ 						Items.gold_ingot });
++ 		this.addRecipe(new ItemStack(Items.netherite_sword), new Object[] { "I", "I", "S", Character.valueOf('I'),
++ 				Items.netherite_ingot, Character.valueOf('S'), Items.stick });
++ 		this.addRecipe(new ItemStack(Items.netherite_pickaxe), new Object[] { "III", " S ", " S ",
++ 				Character.valueOf('I'), Items.netherite_ingot, Character.valueOf('S'), Items.stick });
++ 		this.addRecipe(new ItemStack(Items.netherite_axe), new Object[] { "II", "IS", " S", Character.valueOf('I'),
++ 				Items.netherite_ingot, Character.valueOf('S'), Items.stick });
++ 		this.addRecipe(new ItemStack(Items.netherite_shovel), new Object[] { "I", "S", "S", Character.valueOf('I'),
++ 				Items.netherite_ingot, Character.valueOf('S'), Items.stick });
++ 		this.addRecipe(new ItemStack(Items.netherite_hoe), new Object[] { "II", " S", " S", Character.valueOf('I'),
++ 				Items.netherite_ingot, Character.valueOf('S'), Items.stick });
++ 		this.addRecipe(new ItemStack(Items.mace), new Object[] { "I", "I", "S", Character.valueOf('I'),
++ 				Items.netherite_ingot, Character.valueOf('S'), Items.stick });
++ 		// Opticlient: batch 7 recipes
++ 		this.addRecipe(new ItemStack(Blocks.cut_sandstone, 4),
++ 				new Object[] { "##", "##", Character.valueOf('#'), Blocks.sandstone });
++ 		this.addRecipe(new ItemStack(Blocks.chiseled_sandstone),
++ 				new Object[] { "#", "#", Character.valueOf('#'), Blocks.cut_sandstone });
++ 		this.addRecipe(new ItemStack(Blocks.carved_pumpkin),
++ 				new Object[] { "#", Character.valueOf('#'), Blocks.pumpkin });
++ 		this.addRecipe(new ItemStack(Blocks.jack_o_lantern), new Object[] { "P", "T", Character.valueOf('P'),
++ 				Blocks.carved_pumpkin, Character.valueOf('T'), Blocks.torch });
 
 > CHANGE  67 : 69  @  67 : 68
 

@@ -3558,3 +3558,36 @@ tile.brown_terracotta.name=Brown Terracotta
 tile.green_terracotta.name=Green Terracotta
 tile.red_terracotta.name=Red Terracotta
 tile.black_terracotta.name=Black Terracotta
+
+# Opticlient: netherite, mace, copper golem
+item.netheriteScrap.name=Netherite Scrap
+item.netheriteIngot.name=Netherite Ingot
+item.swordNetherite.name=Netherite Sword
+item.shovelNetherite.name=Netherite Shovel
+item.pickaxeNetherite.name=Netherite Pickaxe
+item.hatchetNetherite.name=Netherite Axe
+item.hoeNetherite.name=Netherite Hoe
+item.mace.name=Mace
+entity.CopperGolem.name=Copper Golem
+
+# Opticlient: batch 7
+tile.stripped_oak_log.name=Stripped Oak Log
+tile.stripped_spruce_log.name=Stripped Spruce Log
+tile.stripped_birch_log.name=Stripped Birch Log
+tile.stripped_jungle_log.name=Stripped Jungle Log
+tile.stripped_acacia_log.name=Stripped Acacia Log
+tile.stripped_dark_oak_log.name=Stripped Dark Oak Log
+tile.stripped_mangrove_log.name=Stripped Mangrove Log
+tile.stripped_cherry_log.name=Stripped Cherry Log
+tile.stripped_crimson_stem.name=Stripped Crimson Stem
+tile.stripped_warped_stem.name=Stripped Warped Stem
+tile.stripped_bamboo_block.name=Stripped Bamboo Block
+tile.crimson_nylium.name=Crimson Nylium
+tile.warped_nylium.name=Warped Nylium
+tile.melon.name=Melon
+tile.carved_pumpkin.name=Carved Pumpkin
+tile.jack_o_lantern.name=Jack o'Lantern
+tile.cut_sandstone.name=Cut Sandstone
+tile.chiseled_sandstone.name=Chiseled Sandstone
+tile.red_sand.name=Red Sand
+tile.chiseled_bookshelf_empty.name=Chiseled Bookshelf

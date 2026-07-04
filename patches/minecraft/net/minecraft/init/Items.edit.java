@@ -7,7 +7,7 @@
 
 > DELETE  2  @  2 : 3
 
-> CHANGE  13 : 202  @  13 : 200
+> CHANGE  13 : 210  @  13 : 200
 
 ~ 	public static Item iron_shovel;
 ~ 	public static Item iron_pickaxe;
@@ -21,6 +21,14 @@
 ~ 	public static Item iron_ingot;
 ~ 	public static Item raw_copper;
 ~ 	public static Item copper_ingot;
+~ 	public static Item netherite_scrap;
+~ 	public static Item netherite_ingot;
+~ 	public static Item netherite_sword;
+~ 	public static Item netherite_shovel;
+~ 	public static Item netherite_pickaxe;
+~ 	public static Item netherite_axe;
+~ 	public static Item netherite_hoe;
+~ 	public static Item mace;
 ~ 	public static Item gold_ingot;
 ~ 	public static Item iron_sword;
 ~ 	public static Item wooden_sword;
@@ -203,9 +211,17 @@
 
 ~ 	static void doBootstrap() {
 
-> INSERT  13 : 15  @  13
+> INSERT  13 : 23  @  13
 
 + 			raw_copper = getRegisteredItem("raw_copper");
 + 			copper_ingot = getRegisteredItem("copper_ingot");
++ 			netherite_scrap = getRegisteredItem("netherite_scrap");
++ 			netherite_ingot = getRegisteredItem("netherite_ingot");
++ 			netherite_sword = getRegisteredItem("netherite_sword");
++ 			netherite_shovel = getRegisteredItem("netherite_shovel");
++ 			netherite_pickaxe = getRegisteredItem("netherite_pickaxe");
++ 			netherite_axe = getRegisteredItem("netherite_axe");
++ 			netherite_hoe = getRegisteredItem("netherite_hoe");
++ 			mace = getRegisteredItem("mace");
 
 > EOF

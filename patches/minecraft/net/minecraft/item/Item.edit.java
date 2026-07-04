@@ -5,10 +5,11 @@
 # Version: 1.0
 # Author: lax1dude
 
-> INSERT  2 : 7  @  2
+> INSERT  2 : 8  @  2
 
 + import java.util.List;
 + import java.util.Map;
++ import net.lax1dude.eaglercraft.v1_8.opticlient.ItemMace;
 + import net.lax1dude.eaglercraft.v1_8.EaglercraftRandom;
 + import net.lax1dude.eaglercraft.v1_8.EaglercraftUUID;
 + 
@@ -28,7 +29,7 @@
 
 ~ 	protected static EaglercraftRandom itemRand = new EaglercraftRandom();
 
-> INSERT  470 : 645  @  470
+> INSERT  470 : 665  @  470
 
 + 		registerItemBlock(Blocks.concrete, (new ItemCloth(Blocks.concrete)).setUnlocalizedName("concrete"));
 + 		registerItemBlock(Blocks.smooth_stone);
@@ -204,16 +205,61 @@
 + 		registerItemBlock(Blocks.green_terracotta);
 + 		registerItemBlock(Blocks.red_terracotta);
 + 		registerItemBlock(Blocks.black_terracotta);
++ 		registerItemBlock(Blocks.stripped_oak_log);
++ 		registerItemBlock(Blocks.stripped_spruce_log);
++ 		registerItemBlock(Blocks.stripped_birch_log);
++ 		registerItemBlock(Blocks.stripped_jungle_log);
++ 		registerItemBlock(Blocks.stripped_acacia_log);
++ 		registerItemBlock(Blocks.stripped_dark_oak_log);
++ 		registerItemBlock(Blocks.stripped_mangrove_log);
++ 		registerItemBlock(Blocks.stripped_cherry_log);
++ 		registerItemBlock(Blocks.stripped_crimson_stem);
++ 		registerItemBlock(Blocks.stripped_warped_stem);
++ 		registerItemBlock(Blocks.stripped_bamboo_block);
++ 		registerItemBlock(Blocks.crimson_nylium);
++ 		registerItemBlock(Blocks.warped_nylium);
++ 		registerItemBlock(Blocks.melon);
++ 		registerItemBlock(Blocks.carved_pumpkin);
++ 		registerItemBlock(Blocks.jack_o_lantern);
++ 		registerItemBlock(Blocks.cut_sandstone);
++ 		registerItemBlock(Blocks.chiseled_sandstone);
++ 		registerItemBlock(Blocks.red_sand);
++ 		registerItemBlock(Blocks.chiseled_bookshelf_empty);
 + 
 
-> INSERT  52 : 56  @  52
+> INSERT  52 : 71  @  52
 
 + 		registerItem(432, (String) "raw_copper",
 + 				(new Item()).setUnlocalizedName("rawCopper").setCreativeTab(CreativeTabs.tabMaterials));
 + 		registerItem(433, (String) "copper_ingot",
 + 				(new Item()).setUnlocalizedName("ingotCopper").setCreativeTab(CreativeTabs.tabMaterials));
++ 		registerItem(434, (String) "netherite_scrap",
++ 				(new Item()).setUnlocalizedName("netheriteScrap").setCreativeTab(CreativeTabs.tabMaterials));
++ 		registerItem(435, (String) "netherite_ingot",
++ 				(new Item()).setUnlocalizedName("netheriteIngot").setCreativeTab(CreativeTabs.tabMaterials));
++ 		registerItem(436, (String) "netherite_sword",
++ 				(new ItemSword(Item.ToolMaterial.NETHERITE)).setUnlocalizedName("swordNetherite"));
++ 		registerItem(437, (String) "netherite_shovel",
++ 				(new ItemSpade(Item.ToolMaterial.NETHERITE)).setUnlocalizedName("shovelNetherite"));
++ 		registerItem(438, (String) "netherite_pickaxe",
++ 				(new ItemPickaxe(Item.ToolMaterial.NETHERITE)).setUnlocalizedName("pickaxeNetherite"));
++ 		registerItem(439, (String) "netherite_axe",
++ 				(new ItemAxe(Item.ToolMaterial.NETHERITE)).setUnlocalizedName("hatchetNetherite"));
++ 		registerItem(440, (String) "netherite_hoe",
++ 				(new ItemHoe(Item.ToolMaterial.NETHERITE)).setUnlocalizedName("hoeNetherite"));
++ 		registerItem(441, (String) "mace", (new ItemMace(Item.ToolMaterial.NETHERITE)).setUnlocalizedName("mace"));
 
-> INSERT  362 : 370  @  362
+> CHANGE  318 : 319  @  318 : 319
+
+~ 		EMERALD(3, 1561, 8.0F, 3.0F, 10), GOLD(0, 32, 12.0F, 0.0F, 22), NETHERITE(4, 2031, 9.0F, 4.0F, 15);
+
+> CHANGE  40 : 43  @  40 : 41
+
+~ 									: (this == IRON ? Items.iron_ingot
+~ 											: (this == EMERALD ? Items.diamond
+~ 													: (this == NETHERITE ? Items.netherite_ingot : null)))));
+
+> INSERT  2 : 10  @  2
 
 + 
 + 	public float getHeldItemBrightnessEagler(ItemStack itemStack) {

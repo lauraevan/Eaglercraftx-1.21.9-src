@@ -7,7 +7,7 @@
 
 > DELETE  34  @  34 : 35
 
-> CHANGE  3 : 353  @  3 : 201
+> CHANGE  3 : 373  @  3 : 201
 
 ~ 	public static Block air;
 ~ 	public static Block stone;
@@ -359,6 +359,26 @@
 ~ 	public static Block green_terracotta;
 ~ 	public static Block red_terracotta;
 ~ 	public static Block black_terracotta;
+~ 	public static Block stripped_oak_log;
+~ 	public static Block stripped_spruce_log;
+~ 	public static Block stripped_birch_log;
+~ 	public static Block stripped_jungle_log;
+~ 	public static Block stripped_acacia_log;
+~ 	public static Block stripped_dark_oak_log;
+~ 	public static Block stripped_mangrove_log;
+~ 	public static Block stripped_cherry_log;
+~ 	public static Block stripped_crimson_stem;
+~ 	public static Block stripped_warped_stem;
+~ 	public static Block stripped_bamboo_block;
+~ 	public static Block crimson_nylium;
+~ 	public static Block warped_nylium;
+~ 	public static Block melon;
+~ 	public static Block carved_pumpkin;
+~ 	public static Block jack_o_lantern;
+~ 	public static Block cut_sandstone;
+~ 	public static Block chiseled_sandstone;
+~ 	public static Block red_sand;
+~ 	public static Block chiseled_bookshelf_empty;
 
 > INSERT  1 : 23  @  1
 
@@ -389,7 +409,7 @@
 
 ~ 	static void doBootstrap() {
 
-> INSERT  180 : 354  @  180
+> INSERT  180 : 374  @  180
 
 + 			concrete = getRegisteredBlock("concrete");
 + 			smooth_stone = getRegisteredBlock("smooth_stone");
@@ -564,6 +584,26 @@
 + 			green_terracotta = getRegisteredBlock("green_terracotta");
 + 			red_terracotta = getRegisteredBlock("red_terracotta");
 + 			black_terracotta = getRegisteredBlock("black_terracotta");
++ 			stripped_oak_log = getRegisteredBlock("stripped_oak_log");
++ 			stripped_spruce_log = getRegisteredBlock("stripped_spruce_log");
++ 			stripped_birch_log = getRegisteredBlock("stripped_birch_log");
++ 			stripped_jungle_log = getRegisteredBlock("stripped_jungle_log");
++ 			stripped_acacia_log = getRegisteredBlock("stripped_acacia_log");
++ 			stripped_dark_oak_log = getRegisteredBlock("stripped_dark_oak_log");
++ 			stripped_mangrove_log = getRegisteredBlock("stripped_mangrove_log");
++ 			stripped_cherry_log = getRegisteredBlock("stripped_cherry_log");
++ 			stripped_crimson_stem = getRegisteredBlock("stripped_crimson_stem");
++ 			stripped_warped_stem = getRegisteredBlock("stripped_warped_stem");
++ 			stripped_bamboo_block = getRegisteredBlock("stripped_bamboo_block");
++ 			crimson_nylium = getRegisteredBlock("crimson_nylium");
++ 			warped_nylium = getRegisteredBlock("warped_nylium");
++ 			melon = getRegisteredBlock("melon");
++ 			carved_pumpkin = getRegisteredBlock("carved_pumpkin");
++ 			jack_o_lantern = getRegisteredBlock("jack_o_lantern");
++ 			cut_sandstone = getRegisteredBlock("cut_sandstone");
++ 			chiseled_sandstone = getRegisteredBlock("chiseled_sandstone");
++ 			red_sand = getRegisteredBlock("red_sand");
++ 			chiseled_bookshelf_empty = getRegisteredBlock("chiseled_bookshelf_empty");
 + 
 
 > EOF
