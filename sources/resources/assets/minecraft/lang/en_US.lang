@@ -3461,3 +3461,7 @@ tile.chiseled_tuff.name=Chiseled Tuff
 # Opticlient: copper items
 item.rawCopper.name=Raw Copper
 item.ingotCopper.name=Copper Ingot
+
+# Opticlient: entities
+entity.Frog.name=Frog
+entity.Warden.name=Warden

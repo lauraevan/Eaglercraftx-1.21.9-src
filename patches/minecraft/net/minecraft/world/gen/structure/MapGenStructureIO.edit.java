@@ -1,6 +1,6 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
@@ -65,7 +65,7 @@
 
 ~ 			logger.warn(exception);
 
-> CHANGE  12 : 19  @  12 : 18
+> CHANGE  12 : 25  @  12 : 18
 
 ~ 		registerStructure(StructureMineshaftStart.class, StructureMineshaftStart::new, "Mineshaft");
 ~ 		registerStructure(MapGenVillage.Start.class, MapGenVillage.Start::new, "Village");
@@ -74,5 +74,11 @@
 ~ 		registerStructure(MapGenScatteredFeature.Start.class, MapGenScatteredFeature.Start::new, "Temple");
 ~ 		registerStructure(StructureOceanMonument.StartMonument.class, StructureOceanMonument.StartMonument::new,
 ~ 				"Monument");
+~ 		registerStructure(net.lax1dude.eaglercraft.v1_8.opticlient.MapGenAncientCity.Start.class,
+~ 				net.lax1dude.eaglercraft.v1_8.opticlient.MapGenAncientCity.Start::new, "AncientCity");
+~ 		registerStructureComponent(
+~ 				net.lax1dude.eaglercraft.v1_8.opticlient.MapGenAncientCity.ComponentAncientCity.class,
+~ 				net.lax1dude.eaglercraft.v1_8.opticlient.MapGenAncientCity.ComponentAncientCity::new,
+~ 				"OptiAncientCity");
 
 > EOF
