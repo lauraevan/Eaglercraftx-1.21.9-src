@@ -62,13 +62,13 @@
 
 > CHANGE  22 : 25  @  22 : 25
 
-~ 	public int limitFramerate = 260;
+~ 	public int limitFramerate = 1000;
 ~ 	public int clouds = 1;
 ~ 	public boolean fancyGraphics = false;
 
 > CHANGE  9 : 10  @  9 : 12
 
-~ 	public boolean enableVsync = EagRuntime.getPlatformType() != EnumPlatformType.DESKTOP;
+~ 	public boolean enableVsync = false;
 
 > CHANGE  5 : 6  @  5 : 6
 
@@ -825,7 +825,7 @@
 
 ~ 					Math.max(this.renderDistanceChunks, 3), this.chatVisibility, this.chatColours, i));
 
-> INSERT  36 : 60  @  36
+> INSERT  36 : 56  @  36
 
 + 	private String toJSONArray(List<String> e) {
 + 		JSONArray arr = new JSONArray();
@@ -837,18 +837,14 @@
 + 
 + 	public int checkBadVideoSettings() {
 + 		return hideVideoSettingsWarning ? 0
-+ 				: ((renderDistanceChunks > 6 ? GuiScreenVideoSettingsWarning.WARNING_RENDER_DISTANCE : 0)
-+ 						| (!enableVsync ? GuiScreenVideoSettingsWarning.WARNING_VSYNC : 0)
-+ 						| (limitFramerate < 30 ? GuiScreenVideoSettingsWarning.WARNING_FRAME_LIMIT : 0));
++ 				: (renderDistanceChunks > 16 ? GuiScreenVideoSettingsWarning.WARNING_RENDER_DISTANCE : 0);
 + 	}
 + 
 + 	public void fixBadVideoSettings() {
-+ 		if (renderDistanceChunks > 6)
-+ 			renderDistanceChunks = 4;
-+ 		if (!enableVsync)
-+ 			enableVsync = true;
-+ 		if (limitFramerate < 30)
-+ 			limitFramerate = 260;
++ 		// Opticlient: allow uncapped FPS - do not force VSync on or clamp the
++ 		// framerate limit; only guard an extreme render distance
++ 		if (renderDistanceChunks > 32)
++ 			renderDistanceChunks = 12;
 + 	}
 + 
 
@@ -856,7 +852,11 @@
 
 ~ 		RENDER_DISTANCE("options.renderDistance", true, false, 1.0F, 18.0F, 1.0F),
 
-> DELETE  8  @  8 : 10
+> CHANGE  1 : 2  @  1 : 2
+
+~ 		FRAMERATE_LIMIT("options.framerateLimit", true, false, 10.0F, 1000.0F, 10.0F),
+
+> DELETE  6  @  6 : 8
 
 > CHANGE  16 : 29  @  16 : 17
 
