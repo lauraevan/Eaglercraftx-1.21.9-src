@@ -173,7 +173,7 @@
 
 + 		// GlStateManager.cullFace(flag ? GL_FRONT : GL_BACK);
 
-> INSERT  301 : 460  @  301
+> INSERT  301 : 505  @  301
 
 + 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLACK.getMetadata(), "black_concrete");
 + 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLUE.getMetadata(), "blue_concrete");
@@ -333,6 +333,51 @@
 + 		this.registerBlock(Blocks.chiseled_red_sandstone, "chiseled_red_sandstone");
 + 		this.registerBlock(Blocks.cut_red_sandstone, "cut_red_sandstone");
 + 		this.registerBlock(Blocks.rooted_dirt, "rooted_dirt");
++ 		this.registerBlock(Blocks.chiseled_tuff_bricks, "chiseled_tuff_bricks");
++ 		this.registerBlock(Blocks.budding_amethyst, "budding_amethyst");
++ 		this.registerBlock(Blocks.ancient_debris, "ancient_debris");
++ 		this.registerBlock(Blocks.polished_basalt, "polished_basalt");
++ 		this.registerBlock(Blocks.magma_block, "magma_block");
++ 		this.registerBlock(Blocks.dark_prismarine, "dark_prismarine");
++ 		this.registerBlock(Blocks.pale_moss_block, "pale_moss_block");
++ 		this.registerBlock(Blocks.reinforced_deepslate, "reinforced_deepslate");
++ 		this.registerBlock(Blocks.coarse_dirt, "coarse_dirt");
++ 		this.registerBlock(Blocks.wet_sponge, "wet_sponge");
++ 		this.registerBlock(Blocks.target, "target");
++ 		this.registerBlock(Blocks.note_block, "note_block");
++ 		this.registerBlock(Blocks.podzol, "podzol");
++ 		this.registerBlock(Blocks.dried_kelp_block, "dried_kelp_block");
++ 		this.registerBlock(Blocks.mangrove_roots, "mangrove_roots");
++ 		this.registerBlock(Blocks.muddy_mangrove_roots, "muddy_mangrove_roots");
++ 		this.registerBlock(Blocks.lodestone, "lodestone");
++ 		this.registerBlock(Blocks.chiseled_quartz_block, "chiseled_quartz_block");
++ 		this.registerBlock(Blocks.stone_bricks, "stone_bricks");
++ 		this.registerBlock(Blocks.mossy_stone_bricks, "mossy_stone_bricks");
++ 		this.registerBlock(Blocks.cracked_stone_bricks, "cracked_stone_bricks");
++ 		this.registerBlock(Blocks.chiseled_stone_bricks, "chiseled_stone_bricks");
++ 		this.registerBlock(Blocks.andesite, "andesite");
++ 		this.registerBlock(Blocks.diorite, "diorite");
++ 		this.registerBlock(Blocks.granite, "granite");
++ 		this.registerBlock(Blocks.polished_andesite, "polished_andesite");
++ 		this.registerBlock(Blocks.polished_diorite, "polished_diorite");
++ 		this.registerBlock(Blocks.polished_granite, "polished_granite");
++ 		this.registerBlock(Blocks.terracotta, "terracotta");
++ 		this.registerBlock(Blocks.white_terracotta, "white_terracotta");
++ 		this.registerBlock(Blocks.orange_terracotta, "orange_terracotta");
++ 		this.registerBlock(Blocks.magenta_terracotta, "magenta_terracotta");
++ 		this.registerBlock(Blocks.light_blue_terracotta, "light_blue_terracotta");
++ 		this.registerBlock(Blocks.yellow_terracotta, "yellow_terracotta");
++ 		this.registerBlock(Blocks.lime_terracotta, "lime_terracotta");
++ 		this.registerBlock(Blocks.pink_terracotta, "pink_terracotta");
++ 		this.registerBlock(Blocks.gray_terracotta, "gray_terracotta");
++ 		this.registerBlock(Blocks.light_gray_terracotta, "light_gray_terracotta");
++ 		this.registerBlock(Blocks.cyan_terracotta, "cyan_terracotta");
++ 		this.registerBlock(Blocks.purple_terracotta, "purple_terracotta");
++ 		this.registerBlock(Blocks.blue_terracotta, "blue_terracotta");
++ 		this.registerBlock(Blocks.brown_terracotta, "brown_terracotta");
++ 		this.registerBlock(Blocks.green_terracotta, "green_terracotta");
++ 		this.registerBlock(Blocks.red_terracotta, "red_terracotta");
++ 		this.registerBlock(Blocks.black_terracotta, "black_terracotta");
 + 
 
 > INSERT  174 : 176  @  174

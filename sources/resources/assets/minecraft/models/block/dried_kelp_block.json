@@ -1,0 +1,7 @@
+{
+    "parent": "block/cube_column",
+    "textures": {
+        "end": "blocks/dried_kelp_block_top",
+        "side": "blocks/dried_kelp_block_side"
+    }
+}

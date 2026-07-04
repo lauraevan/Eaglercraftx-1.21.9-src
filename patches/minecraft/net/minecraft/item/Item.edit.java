@@ -28,7 +28,7 @@
 
 ~ 	protected static EaglercraftRandom itemRand = new EaglercraftRandom();
 
-> INSERT  470 : 600  @  470
+> INSERT  470 : 645  @  470
 
 + 		registerItemBlock(Blocks.concrete, (new ItemCloth(Blocks.concrete)).setUnlocalizedName("concrete"));
 + 		registerItemBlock(Blocks.smooth_stone);
@@ -159,6 +159,51 @@
 + 		registerItemBlock(Blocks.chiseled_red_sandstone);
 + 		registerItemBlock(Blocks.cut_red_sandstone);
 + 		registerItemBlock(Blocks.rooted_dirt);
++ 		registerItemBlock(Blocks.chiseled_tuff_bricks);
++ 		registerItemBlock(Blocks.budding_amethyst);
++ 		registerItemBlock(Blocks.ancient_debris);
++ 		registerItemBlock(Blocks.polished_basalt);
++ 		registerItemBlock(Blocks.magma_block);
++ 		registerItemBlock(Blocks.dark_prismarine);
++ 		registerItemBlock(Blocks.pale_moss_block);
++ 		registerItemBlock(Blocks.reinforced_deepslate);
++ 		registerItemBlock(Blocks.coarse_dirt);
++ 		registerItemBlock(Blocks.wet_sponge);
++ 		registerItemBlock(Blocks.target);
++ 		registerItemBlock(Blocks.note_block);
++ 		registerItemBlock(Blocks.podzol);
++ 		registerItemBlock(Blocks.dried_kelp_block);
++ 		registerItemBlock(Blocks.mangrove_roots);
++ 		registerItemBlock(Blocks.muddy_mangrove_roots);
++ 		registerItemBlock(Blocks.lodestone);
++ 		registerItemBlock(Blocks.chiseled_quartz_block);
++ 		registerItemBlock(Blocks.stone_bricks);
++ 		registerItemBlock(Blocks.mossy_stone_bricks);
++ 		registerItemBlock(Blocks.cracked_stone_bricks);
++ 		registerItemBlock(Blocks.chiseled_stone_bricks);
++ 		registerItemBlock(Blocks.andesite);
++ 		registerItemBlock(Blocks.diorite);
++ 		registerItemBlock(Blocks.granite);
++ 		registerItemBlock(Blocks.polished_andesite);
++ 		registerItemBlock(Blocks.polished_diorite);
++ 		registerItemBlock(Blocks.polished_granite);
++ 		registerItemBlock(Blocks.terracotta);
++ 		registerItemBlock(Blocks.white_terracotta);
++ 		registerItemBlock(Blocks.orange_terracotta);
++ 		registerItemBlock(Blocks.magenta_terracotta);
++ 		registerItemBlock(Blocks.light_blue_terracotta);
++ 		registerItemBlock(Blocks.yellow_terracotta);
++ 		registerItemBlock(Blocks.lime_terracotta);
++ 		registerItemBlock(Blocks.pink_terracotta);
++ 		registerItemBlock(Blocks.gray_terracotta);
++ 		registerItemBlock(Blocks.light_gray_terracotta);
++ 		registerItemBlock(Blocks.cyan_terracotta);
++ 		registerItemBlock(Blocks.purple_terracotta);
++ 		registerItemBlock(Blocks.blue_terracotta);
++ 		registerItemBlock(Blocks.brown_terracotta);
++ 		registerItemBlock(Blocks.green_terracotta);
++ 		registerItemBlock(Blocks.red_terracotta);
++ 		registerItemBlock(Blocks.black_terracotta);
 + 
 
 > INSERT  52 : 56  @  52

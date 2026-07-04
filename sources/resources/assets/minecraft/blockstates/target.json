@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "target"
+        },
+        "axis=z": {
+            "model": "target",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "target",
+            "x": 90,
+            "y": 90
+        },
+        "normal": {
+            "model": "target"
+        }
+    }
+}

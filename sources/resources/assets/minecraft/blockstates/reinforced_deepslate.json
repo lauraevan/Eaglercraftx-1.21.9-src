@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "reinforced_deepslate"
+        },
+        "axis=z": {
+            "model": "reinforced_deepslate",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "reinforced_deepslate",
+            "x": 90,
+            "y": 90
+        },
+        "normal": {
+            "model": "reinforced_deepslate"
+        }
+    }
+}

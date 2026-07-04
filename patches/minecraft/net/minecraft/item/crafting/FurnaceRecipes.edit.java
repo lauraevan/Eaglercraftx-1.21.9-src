@@ -30,11 +30,17 @@
 + 			smeltingBase = new FurnaceRecipes();
 + 		}
 
-> INSERT  5 : 8  @  5
+> INSERT  5 : 14  @  5
 
 + 		this.addSmelting(Items.raw_copper, new ItemStack(Items.copper_ingot), 0.7F);
 + 		this.addSmeltingRecipeForBlock(Blocks.copper_ore, new ItemStack(Items.copper_ingot), 0.7F);
 + 		this.addSmeltingRecipeForBlock(Blocks.deepslate_copper_ore, new ItemStack(Items.copper_ingot), 0.7F);
++ 		// Opticlient: smelting for new blocks
++ 		this.addSmeltingRecipe(new ItemStack(Blocks.stone_bricks), new ItemStack(Blocks.cracked_stone_bricks), 0.1F);
++ 		this.addSmeltingRecipeForBlock(Blocks.deepslate_gold_ore, new ItemStack(Items.gold_ingot), 1.0F);
++ 		this.addSmeltingRecipeForBlock(Blocks.deepslate_redstone_ore, new ItemStack(Items.redstone), 0.7F);
++ 		this.addSmeltingRecipeForBlock(Blocks.deepslate_lapis_ore, new ItemStack(Items.dye, 1, 4), 0.2F);
++ 		this.addSmeltingRecipeForBlock(Blocks.deepslate_emerald_ore, new ItemStack(Items.emerald), 1.0F);
 
 > CHANGE  22 : 25  @  22 : 23
 

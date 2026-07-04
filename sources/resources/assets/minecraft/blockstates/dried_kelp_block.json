@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "dried_kelp_block"
+        },
+        "axis=z": {
+            "model": "dried_kelp_block",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "dried_kelp_block",
+            "x": 90,
+            "y": 90
+        },
+        "normal": {
+            "model": "dried_kelp_block"
+        }
+    }
+}

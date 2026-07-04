@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "podzol"
+        },
+        "axis=z": {
+            "model": "podzol",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "podzol",
+            "x": 90,
+            "y": 90
+        },
+        "normal": {
+            "model": "podzol"
+        }
+    }
+}

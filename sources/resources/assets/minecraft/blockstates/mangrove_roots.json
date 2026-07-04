@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "mangrove_roots"
+        },
+        "axis=z": {
+            "model": "mangrove_roots",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "mangrove_roots",
+            "x": 90,
+            "y": 90
+        },
+        "normal": {
+            "model": "mangrove_roots"
+        }
+    }
+}

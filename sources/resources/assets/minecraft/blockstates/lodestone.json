@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "lodestone"
+        },
+        "axis=z": {
+            "model": "lodestone",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "lodestone",
+            "x": 90,
+            "y": 90
+        },
+        "normal": {
+            "model": "lodestone"
+        }
+    }
+}

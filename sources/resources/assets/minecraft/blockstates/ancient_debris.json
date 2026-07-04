@@ -1,0 +1,19 @@
+{
+    "variants": {
+        "axis=y": {
+            "model": "ancient_debris"
+        },
+        "axis=z": {
+            "model": "ancient_debris",
+            "x": 90
+        },
+        "axis=x": {
+            "model": "ancient_debris",
+            "x": 90,
+            "y": 90
+        },
+        "normal": {
+            "model": "ancient_debris"
+        }
+    }
+}

@@ -7,7 +7,7 @@
 
 > DELETE  34  @  34 : 35
 
-> CHANGE  3 : 308  @  3 : 201
+> CHANGE  3 : 353  @  3 : 201
 
 ~ 	public static Block air;
 ~ 	public static Block stone;
@@ -314,6 +314,51 @@
 ~ 	public static Block chiseled_red_sandstone;
 ~ 	public static Block cut_red_sandstone;
 ~ 	public static Block rooted_dirt;
+~ 	public static Block chiseled_tuff_bricks;
+~ 	public static Block budding_amethyst;
+~ 	public static Block ancient_debris;
+~ 	public static Block polished_basalt;
+~ 	public static Block magma_block;
+~ 	public static Block dark_prismarine;
+~ 	public static Block pale_moss_block;
+~ 	public static Block reinforced_deepslate;
+~ 	public static Block coarse_dirt;
+~ 	public static Block wet_sponge;
+~ 	public static Block target;
+~ 	public static Block note_block;
+~ 	public static Block podzol;
+~ 	public static Block dried_kelp_block;
+~ 	public static Block mangrove_roots;
+~ 	public static Block muddy_mangrove_roots;
+~ 	public static Block lodestone;
+~ 	public static Block chiseled_quartz_block;
+~ 	public static Block stone_bricks;
+~ 	public static Block mossy_stone_bricks;
+~ 	public static Block cracked_stone_bricks;
+~ 	public static Block chiseled_stone_bricks;
+~ 	public static Block andesite;
+~ 	public static Block diorite;
+~ 	public static Block granite;
+~ 	public static Block polished_andesite;
+~ 	public static Block polished_diorite;
+~ 	public static Block polished_granite;
+~ 	public static Block terracotta;
+~ 	public static Block white_terracotta;
+~ 	public static Block orange_terracotta;
+~ 	public static Block magenta_terracotta;
+~ 	public static Block light_blue_terracotta;
+~ 	public static Block yellow_terracotta;
+~ 	public static Block lime_terracotta;
+~ 	public static Block pink_terracotta;
+~ 	public static Block gray_terracotta;
+~ 	public static Block light_gray_terracotta;
+~ 	public static Block cyan_terracotta;
+~ 	public static Block purple_terracotta;
+~ 	public static Block blue_terracotta;
+~ 	public static Block brown_terracotta;
+~ 	public static Block green_terracotta;
+~ 	public static Block red_terracotta;
+~ 	public static Block black_terracotta;
 
 > INSERT  1 : 23  @  1
 
@@ -344,7 +389,7 @@
 
 ~ 	static void doBootstrap() {
 
-> INSERT  180 : 309  @  180
+> INSERT  180 : 354  @  180
 
 + 			concrete = getRegisteredBlock("concrete");
 + 			smooth_stone = getRegisteredBlock("smooth_stone");
@@ -474,6 +519,51 @@
 + 			chiseled_red_sandstone = getRegisteredBlock("chiseled_red_sandstone");
 + 			cut_red_sandstone = getRegisteredBlock("cut_red_sandstone");
 + 			rooted_dirt = getRegisteredBlock("rooted_dirt");
++ 			chiseled_tuff_bricks = getRegisteredBlock("chiseled_tuff_bricks");
++ 			budding_amethyst = getRegisteredBlock("budding_amethyst");
++ 			ancient_debris = getRegisteredBlock("ancient_debris");
++ 			polished_basalt = getRegisteredBlock("polished_basalt");
++ 			magma_block = getRegisteredBlock("magma_block");
++ 			dark_prismarine = getRegisteredBlock("dark_prismarine");
++ 			pale_moss_block = getRegisteredBlock("pale_moss_block");
++ 			reinforced_deepslate = getRegisteredBlock("reinforced_deepslate");
++ 			coarse_dirt = getRegisteredBlock("coarse_dirt");
++ 			wet_sponge = getRegisteredBlock("wet_sponge");
++ 			target = getRegisteredBlock("target");
++ 			note_block = getRegisteredBlock("note_block");
++ 			podzol = getRegisteredBlock("podzol");
++ 			dried_kelp_block = getRegisteredBlock("dried_kelp_block");
++ 			mangrove_roots = getRegisteredBlock("mangrove_roots");
++ 			muddy_mangrove_roots = getRegisteredBlock("muddy_mangrove_roots");
++ 			lodestone = getRegisteredBlock("lodestone");
++ 			chiseled_quartz_block = getRegisteredBlock("chiseled_quartz_block");
++ 			stone_bricks = getRegisteredBlock("stone_bricks");
++ 			mossy_stone_bricks = getRegisteredBlock("mossy_stone_bricks");
++ 			cracked_stone_bricks = getRegisteredBlock("cracked_stone_bricks");
++ 			chiseled_stone_bricks = getRegisteredBlock("chiseled_stone_bricks");
++ 			andesite = getRegisteredBlock("andesite");
++ 			diorite = getRegisteredBlock("diorite");
++ 			granite = getRegisteredBlock("granite");
++ 			polished_andesite = getRegisteredBlock("polished_andesite");
++ 			polished_diorite = getRegisteredBlock("polished_diorite");
++ 			polished_granite = getRegisteredBlock("polished_granite");
++ 			terracotta = getRegisteredBlock("terracotta");
++ 			white_terracotta = getRegisteredBlock("white_terracotta");
++ 			orange_terracotta = getRegisteredBlock("orange_terracotta");
++ 			magenta_terracotta = getRegisteredBlock("magenta_terracotta");
++ 			light_blue_terracotta = getRegisteredBlock("light_blue_terracotta");
++ 			yellow_terracotta = getRegisteredBlock("yellow_terracotta");
++ 			lime_terracotta = getRegisteredBlock("lime_terracotta");
++ 			pink_terracotta = getRegisteredBlock("pink_terracotta");
++ 			gray_terracotta = getRegisteredBlock("gray_terracotta");
++ 			light_gray_terracotta = getRegisteredBlock("light_gray_terracotta");
++ 			cyan_terracotta = getRegisteredBlock("cyan_terracotta");
++ 			purple_terracotta = getRegisteredBlock("purple_terracotta");
++ 			blue_terracotta = getRegisteredBlock("blue_terracotta");
++ 			brown_terracotta = getRegisteredBlock("brown_terracotta");
++ 			green_terracotta = getRegisteredBlock("green_terracotta");
++ 			red_terracotta = getRegisteredBlock("red_terracotta");
++ 			black_terracotta = getRegisteredBlock("black_terracotta");
 + 
 
 > EOF
