@@ -7,7 +7,7 @@
 
 > DELETE  34  @  34 : 35
 
-> CHANGE  3 : 266  @  3 : 201
+> CHANGE  3 : 308  @  3 : 201
 
 ~ 	public static Block air;
 ~ 	public static Block stone;
@@ -272,6 +272,48 @@
 ~ 	public static Block deepslate_lapis_ore;
 ~ 	public static Block deepslate_emerald_ore;
 ~ 	public static Block chiseled_tuff;
+~ 	public static Block exposed_chiseled_copper;
+~ 	public static Block weathered_chiseled_copper;
+~ 	public static Block oxidized_chiseled_copper;
+~ 	public static Block copper_grate;
+~ 	public static Block exposed_copper_grate;
+~ 	public static Block weathered_copper_grate;
+~ 	public static Block oxidized_copper_grate;
+~ 	public static Block copper_bulb;
+~ 	public static Block exposed_copper_bulb;
+~ 	public static Block weathered_copper_bulb;
+~ 	public static Block oxidized_copper_bulb;
+~ 	public static Block white_glazed_terracotta;
+~ 	public static Block orange_glazed_terracotta;
+~ 	public static Block magenta_glazed_terracotta;
+~ 	public static Block light_blue_glazed_terracotta;
+~ 	public static Block yellow_glazed_terracotta;
+~ 	public static Block lime_glazed_terracotta;
+~ 	public static Block pink_glazed_terracotta;
+~ 	public static Block gray_glazed_terracotta;
+~ 	public static Block light_gray_glazed_terracotta;
+~ 	public static Block cyan_glazed_terracotta;
+~ 	public static Block purple_glazed_terracotta;
+~ 	public static Block blue_glazed_terracotta;
+~ 	public static Block brown_glazed_terracotta;
+~ 	public static Block green_glazed_terracotta;
+~ 	public static Block red_glazed_terracotta;
+~ 	public static Block black_glazed_terracotta;
+~ 	public static Block tube_coral_block;
+~ 	public static Block dead_tube_coral_block;
+~ 	public static Block brain_coral_block;
+~ 	public static Block dead_brain_coral_block;
+~ 	public static Block bubble_coral_block;
+~ 	public static Block dead_bubble_coral_block;
+~ 	public static Block fire_coral_block;
+~ 	public static Block dead_fire_coral_block;
+~ 	public static Block horn_coral_block;
+~ 	public static Block dead_horn_coral_block;
+~ 	public static Block nether_gold_ore;
+~ 	public static Block bamboo_mosaic;
+~ 	public static Block chiseled_red_sandstone;
+~ 	public static Block cut_red_sandstone;
+~ 	public static Block rooted_dirt;
 
 > INSERT  1 : 23  @  1
 
@@ -302,7 +344,7 @@
 
 ~ 	static void doBootstrap() {
 
-> INSERT  180 : 267  @  180
+> INSERT  180 : 309  @  180
 
 + 			concrete = getRegisteredBlock("concrete");
 + 			smooth_stone = getRegisteredBlock("smooth_stone");
@@ -390,6 +432,48 @@
 + 			deepslate_lapis_ore = getRegisteredBlock("deepslate_lapis_ore");
 + 			deepslate_emerald_ore = getRegisteredBlock("deepslate_emerald_ore");
 + 			chiseled_tuff = getRegisteredBlock("chiseled_tuff");
++ 			exposed_chiseled_copper = getRegisteredBlock("exposed_chiseled_copper");
++ 			weathered_chiseled_copper = getRegisteredBlock("weathered_chiseled_copper");
++ 			oxidized_chiseled_copper = getRegisteredBlock("oxidized_chiseled_copper");
++ 			copper_grate = getRegisteredBlock("copper_grate");
++ 			exposed_copper_grate = getRegisteredBlock("exposed_copper_grate");
++ 			weathered_copper_grate = getRegisteredBlock("weathered_copper_grate");
++ 			oxidized_copper_grate = getRegisteredBlock("oxidized_copper_grate");
++ 			copper_bulb = getRegisteredBlock("copper_bulb");
++ 			exposed_copper_bulb = getRegisteredBlock("exposed_copper_bulb");
++ 			weathered_copper_bulb = getRegisteredBlock("weathered_copper_bulb");
++ 			oxidized_copper_bulb = getRegisteredBlock("oxidized_copper_bulb");
++ 			white_glazed_terracotta = getRegisteredBlock("white_glazed_terracotta");
++ 			orange_glazed_terracotta = getRegisteredBlock("orange_glazed_terracotta");
++ 			magenta_glazed_terracotta = getRegisteredBlock("magenta_glazed_terracotta");
++ 			light_blue_glazed_terracotta = getRegisteredBlock("light_blue_glazed_terracotta");
++ 			yellow_glazed_terracotta = getRegisteredBlock("yellow_glazed_terracotta");
++ 			lime_glazed_terracotta = getRegisteredBlock("lime_glazed_terracotta");
++ 			pink_glazed_terracotta = getRegisteredBlock("pink_glazed_terracotta");
++ 			gray_glazed_terracotta = getRegisteredBlock("gray_glazed_terracotta");
++ 			light_gray_glazed_terracotta = getRegisteredBlock("light_gray_glazed_terracotta");
++ 			cyan_glazed_terracotta = getRegisteredBlock("cyan_glazed_terracotta");
++ 			purple_glazed_terracotta = getRegisteredBlock("purple_glazed_terracotta");
++ 			blue_glazed_terracotta = getRegisteredBlock("blue_glazed_terracotta");
++ 			brown_glazed_terracotta = getRegisteredBlock("brown_glazed_terracotta");
++ 			green_glazed_terracotta = getRegisteredBlock("green_glazed_terracotta");
++ 			red_glazed_terracotta = getRegisteredBlock("red_glazed_terracotta");
++ 			black_glazed_terracotta = getRegisteredBlock("black_glazed_terracotta");
++ 			tube_coral_block = getRegisteredBlock("tube_coral_block");
++ 			dead_tube_coral_block = getRegisteredBlock("dead_tube_coral_block");
++ 			brain_coral_block = getRegisteredBlock("brain_coral_block");
++ 			dead_brain_coral_block = getRegisteredBlock("dead_brain_coral_block");
++ 			bubble_coral_block = getRegisteredBlock("bubble_coral_block");
++ 			dead_bubble_coral_block = getRegisteredBlock("dead_bubble_coral_block");
++ 			fire_coral_block = getRegisteredBlock("fire_coral_block");
++ 			dead_fire_coral_block = getRegisteredBlock("dead_fire_coral_block");
++ 			horn_coral_block = getRegisteredBlock("horn_coral_block");
++ 			dead_horn_coral_block = getRegisteredBlock("dead_horn_coral_block");
++ 			nether_gold_ore = getRegisteredBlock("nether_gold_ore");
++ 			bamboo_mosaic = getRegisteredBlock("bamboo_mosaic");
++ 			chiseled_red_sandstone = getRegisteredBlock("chiseled_red_sandstone");
++ 			cut_red_sandstone = getRegisteredBlock("cut_red_sandstone");
++ 			rooted_dirt = getRegisteredBlock("rooted_dirt");
 + 
 
 > EOF

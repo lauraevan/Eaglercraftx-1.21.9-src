@@ -24,7 +24,7 @@ import net.minecraft.world.gen.structure.StructureStart;
  */
 public class MapGenAncientCity extends MapGenStructure {
 
-	private final int spacing = 24;
+	private final int spacing = 16;
 	private final int separation = 8;
 
 	public MapGenAncientCity() {
@@ -78,7 +78,7 @@ public class MapGenAncientCity extends MapGenStructure {
 		public ComponentAncientCity(EaglercraftRandom random, int x, int z) {
 			super(0);
 			this.coordBaseMode = EnumFacing.Plane.HORIZONTAL.random(random);
-			int y = 10;
+			int y = 20;
 			this.boundingBox = new StructureBoundingBox(x, y, z, x + SX - 1, y + SY - 1, z + SZ - 1);
 		}
 

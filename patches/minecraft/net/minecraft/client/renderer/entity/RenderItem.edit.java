@@ -173,7 +173,7 @@
 
 + 		// GlStateManager.cullFace(flag ? GL_FRONT : GL_BACK);
 
-> INSERT  301 : 418  @  301
+> INSERT  301 : 460  @  301
 
 + 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLACK.getMetadata(), "black_concrete");
 + 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLUE.getMetadata(), "blue_concrete");
@@ -291,6 +291,48 @@
 + 		this.registerBlock(Blocks.deepslate_lapis_ore, "deepslate_lapis_ore");
 + 		this.registerBlock(Blocks.deepslate_emerald_ore, "deepslate_emerald_ore");
 + 		this.registerBlock(Blocks.chiseled_tuff, "chiseled_tuff");
++ 		this.registerBlock(Blocks.exposed_chiseled_copper, "exposed_chiseled_copper");
++ 		this.registerBlock(Blocks.weathered_chiseled_copper, "weathered_chiseled_copper");
++ 		this.registerBlock(Blocks.oxidized_chiseled_copper, "oxidized_chiseled_copper");
++ 		this.registerBlock(Blocks.copper_grate, "copper_grate");
++ 		this.registerBlock(Blocks.exposed_copper_grate, "exposed_copper_grate");
++ 		this.registerBlock(Blocks.weathered_copper_grate, "weathered_copper_grate");
++ 		this.registerBlock(Blocks.oxidized_copper_grate, "oxidized_copper_grate");
++ 		this.registerBlock(Blocks.copper_bulb, "copper_bulb");
++ 		this.registerBlock(Blocks.exposed_copper_bulb, "exposed_copper_bulb");
++ 		this.registerBlock(Blocks.weathered_copper_bulb, "weathered_copper_bulb");
++ 		this.registerBlock(Blocks.oxidized_copper_bulb, "oxidized_copper_bulb");
++ 		this.registerBlock(Blocks.white_glazed_terracotta, "white_glazed_terracotta");
++ 		this.registerBlock(Blocks.orange_glazed_terracotta, "orange_glazed_terracotta");
++ 		this.registerBlock(Blocks.magenta_glazed_terracotta, "magenta_glazed_terracotta");
++ 		this.registerBlock(Blocks.light_blue_glazed_terracotta, "light_blue_glazed_terracotta");
++ 		this.registerBlock(Blocks.yellow_glazed_terracotta, "yellow_glazed_terracotta");
++ 		this.registerBlock(Blocks.lime_glazed_terracotta, "lime_glazed_terracotta");
++ 		this.registerBlock(Blocks.pink_glazed_terracotta, "pink_glazed_terracotta");
++ 		this.registerBlock(Blocks.gray_glazed_terracotta, "gray_glazed_terracotta");
++ 		this.registerBlock(Blocks.light_gray_glazed_terracotta, "light_gray_glazed_terracotta");
++ 		this.registerBlock(Blocks.cyan_glazed_terracotta, "cyan_glazed_terracotta");
++ 		this.registerBlock(Blocks.purple_glazed_terracotta, "purple_glazed_terracotta");
++ 		this.registerBlock(Blocks.blue_glazed_terracotta, "blue_glazed_terracotta");
++ 		this.registerBlock(Blocks.brown_glazed_terracotta, "brown_glazed_terracotta");
++ 		this.registerBlock(Blocks.green_glazed_terracotta, "green_glazed_terracotta");
++ 		this.registerBlock(Blocks.red_glazed_terracotta, "red_glazed_terracotta");
++ 		this.registerBlock(Blocks.black_glazed_terracotta, "black_glazed_terracotta");
++ 		this.registerBlock(Blocks.tube_coral_block, "tube_coral_block");
++ 		this.registerBlock(Blocks.dead_tube_coral_block, "dead_tube_coral_block");
++ 		this.registerBlock(Blocks.brain_coral_block, "brain_coral_block");
++ 		this.registerBlock(Blocks.dead_brain_coral_block, "dead_brain_coral_block");
++ 		this.registerBlock(Blocks.bubble_coral_block, "bubble_coral_block");
++ 		this.registerBlock(Blocks.dead_bubble_coral_block, "dead_bubble_coral_block");
++ 		this.registerBlock(Blocks.fire_coral_block, "fire_coral_block");
++ 		this.registerBlock(Blocks.dead_fire_coral_block, "dead_fire_coral_block");
++ 		this.registerBlock(Blocks.horn_coral_block, "horn_coral_block");
++ 		this.registerBlock(Blocks.dead_horn_coral_block, "dead_horn_coral_block");
++ 		this.registerBlock(Blocks.nether_gold_ore, "nether_gold_ore");
++ 		this.registerBlock(Blocks.bamboo_mosaic, "bamboo_mosaic");
++ 		this.registerBlock(Blocks.chiseled_red_sandstone, "chiseled_red_sandstone");
++ 		this.registerBlock(Blocks.cut_red_sandstone, "cut_red_sandstone");
++ 		this.registerBlock(Blocks.rooted_dirt, "rooted_dirt");
 + 
 
 > INSERT  174 : 176  @  174

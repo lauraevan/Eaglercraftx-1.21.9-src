@@ -28,7 +28,7 @@
 
 ~ 	protected static EaglercraftRandom itemRand = new EaglercraftRandom();
 
-> INSERT  470 : 558  @  470
+> INSERT  470 : 600  @  470
 
 + 		registerItemBlock(Blocks.concrete, (new ItemCloth(Blocks.concrete)).setUnlocalizedName("concrete"));
 + 		registerItemBlock(Blocks.smooth_stone);
@@ -117,6 +117,48 @@
 + 		registerItemBlock(Blocks.deepslate_lapis_ore);
 + 		registerItemBlock(Blocks.deepslate_emerald_ore);
 + 		registerItemBlock(Blocks.chiseled_tuff);
++ 		registerItemBlock(Blocks.exposed_chiseled_copper);
++ 		registerItemBlock(Blocks.weathered_chiseled_copper);
++ 		registerItemBlock(Blocks.oxidized_chiseled_copper);
++ 		registerItemBlock(Blocks.copper_grate);
++ 		registerItemBlock(Blocks.exposed_copper_grate);
++ 		registerItemBlock(Blocks.weathered_copper_grate);
++ 		registerItemBlock(Blocks.oxidized_copper_grate);
++ 		registerItemBlock(Blocks.copper_bulb);
++ 		registerItemBlock(Blocks.exposed_copper_bulb);
++ 		registerItemBlock(Blocks.weathered_copper_bulb);
++ 		registerItemBlock(Blocks.oxidized_copper_bulb);
++ 		registerItemBlock(Blocks.white_glazed_terracotta);
++ 		registerItemBlock(Blocks.orange_glazed_terracotta);
++ 		registerItemBlock(Blocks.magenta_glazed_terracotta);
++ 		registerItemBlock(Blocks.light_blue_glazed_terracotta);
++ 		registerItemBlock(Blocks.yellow_glazed_terracotta);
++ 		registerItemBlock(Blocks.lime_glazed_terracotta);
++ 		registerItemBlock(Blocks.pink_glazed_terracotta);
++ 		registerItemBlock(Blocks.gray_glazed_terracotta);
++ 		registerItemBlock(Blocks.light_gray_glazed_terracotta);
++ 		registerItemBlock(Blocks.cyan_glazed_terracotta);
++ 		registerItemBlock(Blocks.purple_glazed_terracotta);
++ 		registerItemBlock(Blocks.blue_glazed_terracotta);
++ 		registerItemBlock(Blocks.brown_glazed_terracotta);
++ 		registerItemBlock(Blocks.green_glazed_terracotta);
++ 		registerItemBlock(Blocks.red_glazed_terracotta);
++ 		registerItemBlock(Blocks.black_glazed_terracotta);
++ 		registerItemBlock(Blocks.tube_coral_block);
++ 		registerItemBlock(Blocks.dead_tube_coral_block);
++ 		registerItemBlock(Blocks.brain_coral_block);
++ 		registerItemBlock(Blocks.dead_brain_coral_block);
++ 		registerItemBlock(Blocks.bubble_coral_block);
++ 		registerItemBlock(Blocks.dead_bubble_coral_block);
++ 		registerItemBlock(Blocks.fire_coral_block);
++ 		registerItemBlock(Blocks.dead_fire_coral_block);
++ 		registerItemBlock(Blocks.horn_coral_block);
++ 		registerItemBlock(Blocks.dead_horn_coral_block);
++ 		registerItemBlock(Blocks.nether_gold_ore);
++ 		registerItemBlock(Blocks.bamboo_mosaic);
++ 		registerItemBlock(Blocks.chiseled_red_sandstone);
++ 		registerItemBlock(Blocks.cut_red_sandstone);
++ 		registerItemBlock(Blocks.rooted_dirt);
 + 
 
 > INSERT  52 : 56  @  52

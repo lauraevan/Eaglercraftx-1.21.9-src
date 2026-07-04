@@ -54,7 +54,7 @@
 
 + 		bootstrapStates();
 
-> INSERT  439 : 674  @  439
+> INSERT  439 : 803  @  439
 
 + 
 + 		// Opticlient: modern building blocks backported from 1.21
@@ -290,6 +290,135 @@
 + 		registerBlock(284, (String) "chiseled_tuff",
 + 				(new Block(Material.rock)).setHardness(1.5F).setResistance(6.0F).setStepSound(soundTypeStone)
 + 						.setUnlocalizedName("chiseled_tuff").setCreativeTab(CreativeTabs.tabBlock));
++ 
++ 		// Opticlient: batch 4 - copper family, glazed terracotta, coral, more
++ 		registerBlock(285, (String) "exposed_chiseled_copper",
++ 				(new Block(Material.rock)).setHardness(3F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("exposed_chiseled_copper").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(286, (String) "weathered_chiseled_copper",
++ 				(new Block(Material.rock)).setHardness(3F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("weathered_chiseled_copper").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(287, (String) "oxidized_chiseled_copper",
++ 				(new Block(Material.rock)).setHardness(3F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("oxidized_chiseled_copper").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(288, (String) "copper_grate", (new Block(Material.rock)).setHardness(3F).setResistance(6F)
++ 				.setStepSound(soundTypeStone).setUnlocalizedName("copper_grate").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(289, (String) "exposed_copper_grate",
++ 				(new Block(Material.rock)).setHardness(3F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("exposed_copper_grate").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(290, (String) "weathered_copper_grate",
++ 				(new Block(Material.rock)).setHardness(3F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("weathered_copper_grate").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(291, (String) "oxidized_copper_grate",
++ 				(new Block(Material.rock)).setHardness(3F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("oxidized_copper_grate").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(292, (String) "copper_bulb",
++ 				(new Block(Material.rock)).setHardness(3F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setLightLevel(1.0F).setUnlocalizedName("copper_bulb").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(293, (String) "exposed_copper_bulb",
++ 				(new Block(Material.rock)).setHardness(3F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setLightLevel(1.0F).setUnlocalizedName("exposed_copper_bulb")
++ 						.setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(294, (String) "weathered_copper_bulb",
++ 				(new Block(Material.rock)).setHardness(3F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setLightLevel(1.0F).setUnlocalizedName("weathered_copper_bulb")
++ 						.setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(295, (String) "oxidized_copper_bulb",
++ 				(new Block(Material.rock)).setHardness(3F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setLightLevel(1.0F).setUnlocalizedName("oxidized_copper_bulb")
++ 						.setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(296, (String) "white_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("white_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(297, (String) "orange_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("orange_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(298, (String) "magenta_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("magenta_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(299, (String) "light_blue_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("light_blue_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(300, (String) "yellow_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("yellow_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(301, (String) "lime_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("lime_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(302, (String) "pink_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("pink_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(303, (String) "gray_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("gray_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(304, (String) "light_gray_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("light_gray_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(305, (String) "cyan_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("cyan_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(306, (String) "purple_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("purple_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(307, (String) "blue_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("blue_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(308, (String) "brown_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("brown_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(309, (String) "green_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("green_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(310, (String) "red_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("red_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(311, (String) "black_glazed_terracotta",
++ 				(new Block(Material.rock)).setHardness(1.4F).setResistance(7F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("black_glazed_terracotta").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(312, (String) "tube_coral_block",
++ 				(new Block(Material.rock)).setHardness(1.5F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("tube_coral_block").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(313, (String) "dead_tube_coral_block",
++ 				(new Block(Material.rock)).setHardness(1.5F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("dead_tube_coral_block").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(314, (String) "brain_coral_block",
++ 				(new Block(Material.rock)).setHardness(1.5F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("brain_coral_block").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(315, (String) "dead_brain_coral_block",
++ 				(new Block(Material.rock)).setHardness(1.5F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("dead_brain_coral_block").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(316, (String) "bubble_coral_block",
++ 				(new Block(Material.rock)).setHardness(1.5F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("bubble_coral_block").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(317, (String) "dead_bubble_coral_block",
++ 				(new Block(Material.rock)).setHardness(1.5F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("dead_bubble_coral_block").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(318, (String) "fire_coral_block",
++ 				(new Block(Material.rock)).setHardness(1.5F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("fire_coral_block").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(319, (String) "dead_fire_coral_block",
++ 				(new Block(Material.rock)).setHardness(1.5F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("dead_fire_coral_block").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(320, (String) "horn_coral_block",
++ 				(new Block(Material.rock)).setHardness(1.5F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("horn_coral_block").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(321, (String) "dead_horn_coral_block",
++ 				(new Block(Material.rock)).setHardness(1.5F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("dead_horn_coral_block").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(322, (String) "nether_gold_ore",
++ 				(new Block(Material.rock)).setHardness(3F).setResistance(3F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("nether_gold_ore").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(323, (String) "bamboo_mosaic",
++ 				(new Block(Material.rock)).setHardness(2F).setResistance(3F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("bamboo_mosaic").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(324, (String) "chiseled_red_sandstone",
++ 				(new Block(Material.rock)).setHardness(0.8F).setResistance(0.8F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("chiseled_red_sandstone").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(325, (String) "cut_red_sandstone",
++ 				(new Block(Material.rock)).setHardness(0.8F).setResistance(0.8F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("cut_red_sandstone").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(326, (String) "rooted_dirt", (new Block(Material.rock)).setHardness(0.5F).setResistance(0.5F)
++ 				.setStepSound(soundTypeStone).setUnlocalizedName("rooted_dirt").setCreativeTab(CreativeTabs.tabBlock));
 + 
 
 > INSERT  29 : 69  @  29
