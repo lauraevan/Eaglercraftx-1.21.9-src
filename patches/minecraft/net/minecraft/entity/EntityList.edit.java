@@ -1,11 +1,14 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
 
-> DELETE  2  @  2 : 4
+> CHANGE  2 : 4  @  2 : 4
+
+~ import net.lax1dude.eaglercraft.v1_8.opticlient.EntityFrog;
+~ 
 
 > CHANGE  4 : 17  @  4 : 8
 
@@ -175,7 +178,7 @@
 + 		} else {
 + 			arraylist.addAll(set);
 
-> CHANGE  22 : 90  @  22 : 84
+> CHANGE  22 : 91  @  22 : 84
 
 ~ 		addMapping(EntityItem.class, EntityItem::new, "Item", 1);
 ~ 		addMapping(EntityXPOrb.class, EntityXPOrb::new, "XPOrb", 2);
@@ -243,6 +246,7 @@
 ~ 		addMapping(EntityIronGolem.class, EntityIronGolem::new, "VillagerGolem", 99);
 ~ 		addMapping(EntityHorse.class, EntityHorse::new, "EntityHorse", 100, 12623485, 15656192);
 ~ 		addMapping(EntityRabbit.class, EntityRabbit::new, "Rabbit", 101, 10051392, 7555121);
+~ 		addMapping(EntityFrog.class, EntityFrog::new, "Frog", 130, 5143098, 13541416);
 ~ 		addMapping(EntityVillager.class, EntityVillager::new, "Villager", 120, 5651507, 12422002);
 ~ 		addMapping(EntityEnderCrystal.class, EntityEnderCrystal::new, "EnderCrystal", 200);
 

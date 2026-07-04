@@ -1,11 +1,16 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
 
-> INSERT  5 : 6  @  5
+> INSERT  2 : 4  @  2
+
++ import net.lax1dude.eaglercraft.v1_8.opticlient.EntityFrog;
++ 
+
+> INSERT  3 : 4  @  3
 
 + 
 
@@ -67,7 +72,11 @@
 ~ 	protected static NoiseGeneratorPerlin GRASS_COLOR_NOISE;
 ~ 	protected static WorldGenDoublePlant DOUBLE_PLANT_GENERATOR;
 
-> CHANGE  81 : 82  @  81 : 82
+> INSERT  45 : 46  @  45
+
++ 		this.spawnableCreatureList.add(new BiomeGenBase.SpawnListEntry(EntityFrog.class, 8, 2, 4));
+
+> CHANGE  36 : 37  @  36 : 37
 
 ~ 	public WorldGenAbstractTree genBigTreeChance(EaglercraftRandom rand) {
 

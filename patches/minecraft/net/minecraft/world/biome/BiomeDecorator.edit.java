@@ -1,6 +1,6 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
@@ -19,8 +19,20 @@
 
 ~ 	protected EaglercraftRandom randomGenerator;
 
-> CHANGE  38 : 39  @  38 : 39
+> INSERT  12 : 13  @  12
+
++ 	protected WorldGenerator copperGen;
+
+> CHANGE  26 : 27  @  26 : 27
 
 ~ 	public void decorate(World worldIn, EaglercraftRandom random, BiomeGenBase parBiomeGenBase, BlockPos parBlockPos) {
+
+> INSERT  27 : 28  @  27
+
++ 			this.copperGen = new WorldGenMinable(Blocks.copper_ore.getDefaultState(), 10);
+
+> INSERT  273 : 274  @  273
+
++ 		this.genStandardOre1(6, this.copperGen, 0, 96);
 
 > EOF

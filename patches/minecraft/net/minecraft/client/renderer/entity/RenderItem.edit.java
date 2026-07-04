@@ -293,4 +293,9 @@
 + 		this.registerBlock(Blocks.chiseled_tuff, "chiseled_tuff");
 + 
 
+> INSERT  174 : 176  @  174
+
++ 		this.registerItem(Items.raw_copper, "raw_copper");
++ 		this.registerItem(Items.copper_ingot, "copper_ingot");
+
 > EOF

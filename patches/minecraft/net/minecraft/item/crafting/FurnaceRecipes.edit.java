@@ -1,6 +1,6 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
@@ -30,7 +30,13 @@
 + 			smeltingBase = new FurnaceRecipes();
 + 		}
 
-> CHANGE  27 : 30  @  27 : 28
+> INSERT  5 : 8  @  5
+
++ 		this.addSmelting(Items.raw_copper, new ItemStack(Items.copper_ingot), 0.7F);
++ 		this.addSmeltingRecipeForBlock(Blocks.copper_ore, new ItemStack(Items.copper_ingot), 0.7F);
++ 		this.addSmeltingRecipeForBlock(Blocks.deepslate_copper_ore, new ItemStack(Items.copper_ingot), 0.7F);
+
+> CHANGE  22 : 25  @  22 : 23
 
 ~ 		ItemFishFood.FishType[] types = ItemFishFood.FishType.values();
 ~ 		for (int i = 0; i < types.length; ++i) {

@@ -3457,3 +3457,7 @@ tile.deepslate_redstone_ore.name=Deepslate Redstone Ore
 tile.deepslate_lapis_ore.name=Deepslate Lapis Ore
 tile.deepslate_emerald_ore.name=Deepslate Emerald Ore
 tile.chiseled_tuff.name=Chiseled Tuff
+
+# Opticlient: copper items
+item.rawCopper.name=Raw Copper
+item.ingotCopper.name=Copper Ingot

@@ -1,13 +1,13 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
 
 > DELETE  2  @  2 : 3
 
-> CHANGE  13 : 200  @  13 : 200
+> CHANGE  13 : 202  @  13 : 200
 
 ~ 	public static Item iron_shovel;
 ~ 	public static Item iron_pickaxe;
@@ -19,6 +19,8 @@
 ~ 	public static Item coal;
 ~ 	public static Item diamond;
 ~ 	public static Item iron_ingot;
+~ 	public static Item raw_copper;
+~ 	public static Item copper_ingot;
 ~ 	public static Item gold_ingot;
 ~ 	public static Item iron_sword;
 ~ 	public static Item wooden_sword;
@@ -200,5 +202,10 @@
 > CHANGE  5 : 6  @  5 : 6
 
 ~ 	static void doBootstrap() {
+
+> INSERT  13 : 15  @  13
+
++ 			raw_copper = getRegisteredItem("raw_copper");
++ 			copper_ingot = getRegisteredItem("copper_ingot");
 
 > EOF

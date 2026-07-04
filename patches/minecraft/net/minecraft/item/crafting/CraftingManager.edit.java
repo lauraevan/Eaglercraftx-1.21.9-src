@@ -1,6 +1,6 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
@@ -26,7 +26,16 @@
 + 			instance = new CraftingManager();
 + 		}
 
-> CHANGE  382 : 384  @  382 : 383
+> INSERT  299 : 305  @  299
+
++ 		this.addRecipe(new ItemStack(Blocks.copper_block, 1),
++ 				new Object[] { "###", "###", "###", Character.valueOf('#'), Items.copper_ingot });
++ 		this.addRecipe(new ItemStack(Blocks.raw_copper_block, 1),
++ 				new Object[] { "###", "###", "###", Character.valueOf('#'), Items.raw_copper });
++ 		this.addRecipe(new ItemStack(Items.copper_ingot, 9),
++ 				new Object[] { "#", Character.valueOf('#'), Blocks.copper_block });
+
+> CHANGE  83 : 85  @  83 : 84
 
 ~ 		for (int i = 0; i < recipeComponents.length; ++i) {
 ~ 			Object object = recipeComponents[i];

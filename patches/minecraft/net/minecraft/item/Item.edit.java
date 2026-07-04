@@ -119,7 +119,14 @@
 + 		registerItemBlock(Blocks.chiseled_tuff);
 + 
 
-> INSERT  414 : 422  @  414
+> INSERT  52 : 56  @  52
+
++ 		registerItem(432, (String) "raw_copper",
++ 				(new Item()).setUnlocalizedName("rawCopper").setCreativeTab(CreativeTabs.tabMaterials));
++ 		registerItem(433, (String) "copper_ingot",
++ 				(new Item()).setUnlocalizedName("ingotCopper").setCreativeTab(CreativeTabs.tabMaterials));
+
+> INSERT  362 : 370  @  362
 
 + 
 + 	public float getHeldItemBrightnessEagler(ItemStack itemStack) {

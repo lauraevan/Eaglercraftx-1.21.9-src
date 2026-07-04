@@ -5,9 +5,11 @@
 # Version: 1.0
 # Author: lax1dude
 
-> INSERT  2 : 4  @  2
+> INSERT  2 : 6  @  2
 
 + import net.lax1dude.eaglercraft.v1_8.opticlient.BlockColoredFalling;
++ import net.lax1dude.eaglercraft.v1_8.opticlient.BlockCopper;
++ import net.lax1dude.eaglercraft.v1_8.opticlient.BlockOpticlientOre;
 + 
 
 > CHANGE  1 : 4  @  1 : 133
@@ -52,7 +54,7 @@
 
 + 		bootstrapStates();
 
-> INSERT  439 : 679  @  439
+> INSERT  439 : 674  @  439
 
 + 
 + 		// Opticlient: modern building blocks backported from 1.21
@@ -132,17 +134,13 @@
 + 		registerBlock(225, (String) "raw_gold_block",
 + 				(new Block(Material.rock)).setHardness(5.0F).setResistance(6.0F).setStepSound(soundTypeStone)
 + 						.setUnlocalizedName("raw_gold_block").setCreativeTab(CreativeTabs.tabBlock));
-+ 		registerBlock(226, (String) "copper_block", (new Block(Material.rock)).setHardness(3.0F).setResistance(6.0F)
-+ 				.setStepSound(soundTypeStone).setUnlocalizedName("copper_block").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(226, (String) "copper_block",
++ 				(new BlockCopper("exposed_copper")).setUnlocalizedName("copper_block"));
 + 		registerBlock(227, (String) "exposed_copper",
-+ 				(new Block(Material.rock)).setHardness(3.0F).setResistance(6.0F).setStepSound(soundTypeStone)
-+ 						.setUnlocalizedName("exposed_copper").setCreativeTab(CreativeTabs.tabBlock));
++ 				(new BlockCopper("weathered_copper")).setUnlocalizedName("exposed_copper"));
 + 		registerBlock(228, (String) "weathered_copper",
-+ 				(new Block(Material.rock)).setHardness(3.0F).setResistance(6.0F).setStepSound(soundTypeStone)
-+ 						.setUnlocalizedName("weathered_copper").setCreativeTab(CreativeTabs.tabBlock));
-+ 		registerBlock(229, (String) "oxidized_copper",
-+ 				(new Block(Material.rock)).setHardness(3.0F).setResistance(6.0F).setStepSound(soundTypeStone)
-+ 						.setUnlocalizedName("oxidized_copper").setCreativeTab(CreativeTabs.tabBlock));
++ 				(new BlockCopper("oxidized_copper")).setUnlocalizedName("weathered_copper"));
++ 		registerBlock(229, (String) "oxidized_copper", (new BlockCopper(null)).setUnlocalizedName("oxidized_copper"));
 + 		registerBlock(230, (String) "chiseled_copper",
 + 				(new Block(Material.rock)).setHardness(3.0F).setResistance(6.0F).setStepSound(soundTypeStone)
 + 						.setUnlocalizedName("chiseled_copper").setCreativeTab(CreativeTabs.tabBlock));
@@ -264,11 +262,10 @@
 + 		registerBlock(274, (String) "concrete_powder",
 + 				(new BlockColoredFalling(Material.sand)).setHardness(0.5F).setStepSound(soundTypeSand)
 + 						.setUnlocalizedName("concretePowder").setCreativeTab(CreativeTabs.tabBlock));
-+ 		registerBlock(275, (String) "copper_ore", (new Block(Material.rock)).setHardness(3.0F).setResistance(3.0F)
-+ 				.setStepSound(soundTypeStone).setUnlocalizedName("copper_ore").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(275, (String) "copper_ore",
++ 				(new BlockOpticlientOre("raw_copper", 2, 5, 3.0F, 3.0F)).setUnlocalizedName("copper_ore"));
 + 		registerBlock(276, (String) "deepslate_copper_ore",
-+ 				(new Block(Material.rock)).setHardness(4.5F).setResistance(3.0F).setStepSound(soundTypeStone)
-+ 						.setUnlocalizedName("deepslate_copper_ore").setCreativeTab(CreativeTabs.tabBlock));
++ 				(new BlockOpticlientOre("raw_copper", 2, 5, 4.5F, 3.0F)).setUnlocalizedName("deepslate_copper_ore"));
 + 		registerBlock(277, (String) "deepslate_coal_ore",
 + 				(new Block(Material.rock)).setHardness(4.5F).setResistance(3.0F).setStepSound(soundTypeStone)
 + 						.setUnlocalizedName("deepslate_coal_ore").setCreativeTab(CreativeTabs.tabBlock));

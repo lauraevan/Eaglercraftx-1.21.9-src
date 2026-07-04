@@ -1,11 +1,16 @@
 
 # Eagler Context Redacted Diff
-# Copyright (c) 2025 lax1dude. All rights reserved.
+# Copyright (c) 2026 lax1dude. All rights reserved.
 
 # Version: 1.0
 # Author: lax1dude
 
-> DELETE  2  @  2 : 3
+> CHANGE  2 : 6  @  2 : 3
+
+~ import net.lax1dude.eaglercraft.v1_8.opticlient.RenderFrog;
+~ 
+~ import net.lax1dude.eaglercraft.v1_8.opticlient.EntityFrog;
+~ 
 
 > INSERT  1 : 11  @  1
 
@@ -34,7 +39,11 @@
 
 + 	private RenderPlayer eaglerRenderer;
 
-> CHANGE  82 : 92  @  82 : 83
+> INSERT  30 : 31  @  30
+
++ 		this.entityRenderMap.put(EntityFrog.class, new RenderFrog(this));
+
+> CHANGE  52 : 62  @  52 : 53
 
 ~ 		this.skinMap.put("slim", new RenderPlayer(this, true, false));
 ~ 		this.skinMap.put("zombie", new RenderPlayer(this, false, true));
