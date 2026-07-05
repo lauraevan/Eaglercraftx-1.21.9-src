@@ -13,7 +13,11 @@
 
 > DELETE  1  @  1 : 3
 
-> CHANGE  135 : 136  @  135 : 136
+> INSERT  6 : 7  @  6
+
++ 	public static final ResourceLocation opticlientMenuBg = new ResourceLocation("textures/gui/opticlient_menu_bg.png");
+
+> CHANGE  129 : 130  @  129 : 130
 
 ~ 	public void drawTexturedModalRect(int xCoord, int yCoord, EaglerTextureAtlasSprite textureSprite, int widthIn,
 
