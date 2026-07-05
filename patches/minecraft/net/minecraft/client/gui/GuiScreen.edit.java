@@ -448,18 +448,28 @@
 ~ 				}
 ~ 			}
 
-> INSERT  9 : 17  @  9
+> INSERT  9 : 13  @  9
 
-+ 		// Opticlient: on menu screens (no world loaded) draw the animated
-+ 		// Minecraft title panorama as the background, then a soft dark gradient
-+ 		// so button/label text stays readable over it.
-+ 		if (this.mc.theWorld == null) {
-+ 			GuiMainMenu.renderMenuBackground(this.mc, this.width, this.height);
-+ 			this.drawGradientRect(0, 0, this.width, this.height, 0x30000000, 0x70000000);
-+ 			return;
-+ 		}
++ 		// Firework Client: draw the warm cinematic menu background stretched
++ 		// full-screen (a soft dark tint keeps button/label text readable). This
++ 		// is a plain 2D image draw - no 3D/framebuffer work - so it renders
++ 		// reliably on every device.
 
-> CHANGE  33 : 35  @  33 : 42
+> CHANGE  2 : 3  @  2 : 3
+
+~ 		this.mc.getTextureManager().bindTexture(opticlientMenuBg);
+
+> DELETE  1  @  1 : 2
+
+> CHANGE  1 : 6  @  1 : 9
+
+~ 		worldrenderer.pos(0.0D, (double) this.height, 0.0D).tex(0.0D, 1.0D).color(170, 170, 170, 255).endVertex();
+~ 		worldrenderer.pos((double) this.width, (double) this.height, 0.0D).tex(1.0D, 1.0D).color(170, 170, 170, 255)
+~ 				.endVertex();
+~ 		worldrenderer.pos((double) this.width, 0.0D, 0.0D).tex(1.0D, 0.0D).color(170, 170, 170, 255).endVertex();
+~ 		worldrenderer.pos(0.0D, 0.0D, 0.0D).tex(0.0D, 0.0D).color(170, 170, 170, 255).endVertex();
+
+> CHANGE  19 : 21  @  19 : 28
 
 ~ 	private void openWebLink(String parURI) {
 ~ 		EagRuntime.openLink(parURI);

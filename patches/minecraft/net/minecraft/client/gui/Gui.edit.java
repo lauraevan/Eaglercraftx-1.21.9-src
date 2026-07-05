@@ -15,7 +15,7 @@
 
 > INSERT  6 : 7  @  6
 
-+ 	public static final ResourceLocation opticlientMenuBg = new ResourceLocation("textures/gui/opticlient_menu_bg.png");
++ 	public static final ResourceLocation opticlientMenuBg = new ResourceLocation("textures/gui/firework_menu_bg.png");
 
 > CHANGE  129 : 130  @  129 : 130
 
