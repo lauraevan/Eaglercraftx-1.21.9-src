@@ -173,7 +173,7 @@
 
 + 		// GlStateManager.cullFace(flag ? GL_FRONT : GL_BACK);
 
-> INSERT  301 : 528  @  301
+> INSERT  301 : 529  @  301
 
 + 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLACK.getMetadata(), "black_concrete");
 + 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLUE.getMetadata(), "blue_concrete");
@@ -401,6 +401,7 @@
 + 		this.registerBlock(Blocks.smooth_quartz, "smooth_quartz");
 + 		this.registerBlock(Blocks.bricks, "bricks");
 + 		this.registerBlock(Blocks.polished_tuff_bricks, "polished_tuff_bricks");
++ 		this.registerBlock(Blocks.nether_bricks, "nether_bricks");
 + 
 
 > INSERT  174 : 189  @  174

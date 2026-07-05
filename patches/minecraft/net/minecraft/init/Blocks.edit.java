@@ -7,7 +7,7 @@
 
 > DELETE  34  @  34 : 35
 
-> CHANGE  3 : 376  @  3 : 201
+> CHANGE  3 : 377  @  3 : 201
 
 ~ 	public static Block air;
 ~ 	public static Block stone;
@@ -382,6 +382,7 @@
 ~ 	public static Block smooth_quartz;
 ~ 	public static Block bricks;
 ~ 	public static Block polished_tuff_bricks;
+~ 	public static Block nether_bricks;
 
 > INSERT  1 : 23  @  1
 
@@ -412,7 +413,7 @@
 
 ~ 	static void doBootstrap() {
 
-> INSERT  180 : 377  @  180
+> INSERT  180 : 378  @  180
 
 + 			concrete = getRegisteredBlock("concrete");
 + 			smooth_stone = getRegisteredBlock("smooth_stone");
@@ -610,6 +611,7 @@
 + 			smooth_quartz = getRegisteredBlock("smooth_quartz");
 + 			bricks = getRegisteredBlock("bricks");
 + 			polished_tuff_bricks = getRegisteredBlock("polished_tuff_bricks");
++ 			nether_bricks = getRegisteredBlock("nether_bricks");
 + 
 
 > EOF

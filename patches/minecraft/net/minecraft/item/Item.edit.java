@@ -29,7 +29,7 @@
 
 ~ 	protected static EaglercraftRandom itemRand = new EaglercraftRandom();
 
-> INSERT  470 : 668  @  470
+> INSERT  470 : 669  @  470
 
 + 		registerItemBlock(Blocks.concrete, (new ItemCloth(Blocks.concrete)).setUnlocalizedName("concrete"));
 + 		registerItemBlock(Blocks.smooth_stone);
@@ -228,6 +228,7 @@
 + 		registerItemBlock(Blocks.smooth_quartz);
 + 		registerItemBlock(Blocks.bricks);
 + 		registerItemBlock(Blocks.polished_tuff_bricks);
++ 		registerItemBlock(Blocks.nether_bricks);
 + 
 
 > INSERT  52 : 80  @  52

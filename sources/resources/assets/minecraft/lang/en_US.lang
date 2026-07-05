@@ -3603,3 +3603,6 @@ item.elytra.name=Elytra
 tile.smooth_quartz.name=Smooth Quartz Block
 tile.bricks.name=Bricks
 tile.polished_tuff_bricks.name=Polished Tuff Bricks
+
+# Firework Client: batch 9
+tile.nether_bricks.name=Nether Bricks

@@ -13,9 +13,10 @@
 
 > DELETE  1  @  1 : 3
 
-> INSERT  6 : 7  @  6
+> INSERT  6 : 8  @  6
 
-+ 	public static final ResourceLocation opticlientMenuBg = new ResourceLocation("textures/gui/firework_menu_bg.png");
++ 	public static final ResourceLocation opticlientMenuBg = new ResourceLocation(
++ 			"textures/gui/title/background/panorama_0.png");
 
 > CHANGE  129 : 130  @  129 : 130
 

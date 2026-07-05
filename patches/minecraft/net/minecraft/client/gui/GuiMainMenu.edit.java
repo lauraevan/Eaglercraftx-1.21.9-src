@@ -455,12 +455,22 @@
 ~ 
 ~ 		this.mc.getTextureManager().bindTexture(backgroundTexture);
 
-> CHANGE  21 : 23  @  21 : 26
+> CHANGE  22 : 27  @  22 : 23
 
-~ 		// Firework Client: warm cinematic 2D background instead of the panorama.
-~ 		this.drawBackground(0);
+~ 		if (enableBlur) {
+~ 			this.renderSkybox(i, j, f);
+~ 		} else {
+~ 			this.drawPanorama(i, j, f);
+~ 		}
 
-> DELETE  3  @  3 : 5
+> DELETE  1  @  1 : 3
+
+> CHANGE  3 : 7  @  3 : 5
+
+~ 		if (enableBlur) {
+~ 			this.drawGradientRect(0, 0, this.width, this.height, -2130706433, 16777215);
+~ 			this.drawGradientRect(0, 0, this.width, this.height, 0, Integer.MIN_VALUE);
+~ 		}
 
 > CHANGE  2 : 7  @  2 : 3
 
