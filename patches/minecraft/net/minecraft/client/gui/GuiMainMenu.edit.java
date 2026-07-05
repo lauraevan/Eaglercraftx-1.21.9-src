@@ -460,36 +460,37 @@
 ~ 		// Firework Client: warm cinematic 2D background instead of the panorama.
 ~ 		this.drawBackground(0);
 
-> DELETE  3  @  3 : 6
+> DELETE  3  @  3 : 5
 
-> CHANGE  1 : 25  @  1 : 10
+> CHANGE  2 : 7  @  2 : 3
 
-~ 		// Firework Client: custom brand title instead of the Minecraft logo.
-~ 		GlStateManager.pushMatrix();
-~ 		GlStateManager.translate(this.width / 2.0F, (float) b0 + 4.0F, 0.0F);
-~ 		GlStateManager.scale(3.0F, 3.0F, 3.0F);
-~ 		this.drawCenteredString(this.fontRendererObj, "Firework", 0, 0, 0xFFD25A);
-~ 		GlStateManager.popMatrix();
-~ 		GlStateManager.pushMatrix();
-~ 		GlStateManager.translate(this.width / 2.0F, (float) b0 + 30.0F, 0.0F);
-~ 		GlStateManager.scale(3.0F, 3.0F, 3.0F);
-~ 		this.drawCenteredString(this.fontRendererObj, "Client", 0, 0, 0xFF8CC8);
-~ 		GlStateManager.popMatrix();
-~ 		this.drawCenteredString(this.fontRendererObj, "warm - cozy - fast - 1.8.8", this.width / 2, b0 + 62, 0xE8D8E8);
-~ 
-~ 		boolean isForkLabel = ((this.openGLWarning1 != null && this.openGLWarning1.length() > 0)
-~ 				|| (this.openGLWarning2 != null && this.openGLWarning2.length() > 0));
-~ 
-~ 		if (isForkLabel) {
-~ 			drawRect(this.field_92022_t - 3, this.field_92021_u - 3, this.field_92020_v + 3, this.field_92019_w,
-~ 					1428160512);
-~ 			if (this.openGLWarning1 != null)
-~ 				this.drawString(this.fontRendererObj, this.openGLWarning1, this.field_92022_t, this.field_92021_u, -1);
-~ 			if (this.openGLWarning2 != null)
-~ 				this.drawString(this.fontRendererObj, this.openGLWarning2, (this.width - this.field_92024_r) / 2,
-~ 						this.field_92021_u + 12, -1);
+~ 		boolean minc = (double) this.updateCounter < 1.0E-4D;
+~ 		if (this.isDefault) {
+~ 			minc = !minc;
+~ 		}
+~ 		if (minc) {
 
 > CHANGE  4 : 5  @  4 : 5
+
+~ 			this.drawTexturedModalRect(k + 154, b0 + 0, 0, 45, 155, 44);
+
+> INSERT  5 : 18  @  5
+
++ 		boolean isForkLabel = ((this.openGLWarning1 != null && this.openGLWarning1.length() > 0)
++ 				|| (this.openGLWarning2 != null && this.openGLWarning2.length() > 0));
++ 
++ 		if (isForkLabel) {
++ 			drawRect(this.field_92022_t - 3, this.field_92021_u - 3, this.field_92020_v + 3, this.field_92019_w,
++ 					1428160512);
++ 			if (this.openGLWarning1 != null)
++ 				this.drawString(this.fontRendererObj, this.openGLWarning1, this.field_92022_t, this.field_92021_u, -1);
++ 			if (this.openGLWarning2 != null)
++ 				this.drawString(this.fontRendererObj, this.openGLWarning2, (this.width - this.field_92024_r) / 2,
++ 						this.field_92021_u + 12, -1);
++ 		}
++ 
+
+> CHANGE  2 : 3  @  2 : 3
 
 ~ 		GlStateManager.rotate(isForkLabel ? -12.0F : -20.0F, 0.0F, 0.0F, 1.0F);
 
