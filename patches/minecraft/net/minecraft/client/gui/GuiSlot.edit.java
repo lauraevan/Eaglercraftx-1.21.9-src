@@ -33,31 +33,13 @@
 
 ~ 		return (this.getSize() + 1) * this.slotHeight + this.headerPadding;
 
-> CHANGE  82 : 85  @  82 : 83
+> CHANGE  82 : 85  @  82 : 103
 
-~ 			// Opticlient: sample the matching slice of the custom menu background so
-~ 			// the list area blends seamlessly with it, darkened for text readability.
-~ 			this.mc.getTextureManager().bindTexture(Gui.opticlientMenuBg);
+~ 			// Opticlient: draw a translucent dark panel over the list area so the
+~ 			// panorama background shows through, dimmed for readable list text.
+~ 			Gui.drawRect(this.left, this.top, this.right, this.bottom, 0x99000000);
 
-> CHANGE  1 : 5  @  1 : 2
-
-~ 			float uL = (float) this.left / (float) this.width;
-~ 			float uR = (float) this.right / (float) this.width;
-~ 			float vT = (float) this.top / (float) this.height;
-~ 			float vB = (float) this.bottom / (float) this.height;
-
-> CHANGE  1 : 9  @  1 : 17
-
-~ 			worldrenderer.pos((double) this.left, (double) this.bottom, 0.0D).tex((double) uL, (double) vB)
-~ 					.color(90, 90, 100, 255).endVertex();
-~ 			worldrenderer.pos((double) this.right, (double) this.bottom, 0.0D).tex((double) uR, (double) vB)
-~ 					.color(90, 90, 100, 255).endVertex();
-~ 			worldrenderer.pos((double) this.right, (double) this.top, 0.0D).tex((double) uR, (double) vT)
-~ 					.color(90, 90, 100, 255).endVertex();
-~ 			worldrenderer.pos((double) this.left, (double) this.top, 0.0D).tex((double) uL, (double) vT)
-~ 					.color(90, 90, 100, 255).endVertex();
-
-> CHANGE  7 : 8  @  7 : 8
+> CHANGE  6 : 7  @  6 : 7
 
 ~ 			this.drawSelectionBox(k, l, mouseXIn, mouseYIn, this.getSize());
 
@@ -113,5 +95,11 @@
 ~ 						"Exception caught rendering a slot of a list on the screen! Game will continue running due to the suspicion that this could be an intentional crash attempt, and therefore it would be inconvenient if the user were to be locked out of this gui due to repeatedly triggering a full crash report");
 ~ 				excLogger.error(t);
 ~ 			}
+
+> CHANGE  9 : 12  @  9 : 26
+
+~ 		// Opticlient: flat dark header/footer band (over the panorama) instead of
+~ 		// the tiled dirt shadow.
+~ 		Gui.drawRect(this.left, startY, this.left + this.width, endY, 0xB0000000);
 
 > EOF

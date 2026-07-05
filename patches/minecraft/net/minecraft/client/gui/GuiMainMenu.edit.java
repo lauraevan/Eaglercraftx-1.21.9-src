@@ -328,7 +328,73 @@
 
 ~ 		byte b0 = enableBlur ? (byte) 4 : (byte) 1;
 
-> CHANGE  61 : 64  @  61 : 65
+> INSERT  60 : 123  @  60
+
++ 	private static float opticlientPanoramaTimer = 0.0F;
++ 
++ 	public static void renderMenuBackground(Minecraft mc, int width, int height) {
++ 		opticlientPanoramaTimer += 0.4F;
++ 		float timer = opticlientPanoramaTimer;
++ 		Tessellator tessellator = Tessellator.getInstance();
++ 		WorldRenderer worldrenderer = tessellator.getWorldRenderer();
++ 		GlStateManager.matrixMode(5889);
++ 		GlStateManager.pushMatrix();
++ 		GlStateManager.loadIdentity();
++ 		GlStateManager.gluPerspective(85.0F, (float) width / (float) height, 0.05F, 10.0F);
++ 		GlStateManager.matrixMode(5888);
++ 		GlStateManager.pushMatrix();
++ 		GlStateManager.loadIdentity();
++ 		GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
++ 		GlStateManager.rotate(180.0F, 1.0F, 0.0F, 0.0F);
++ 		GlStateManager.enableBlend();
++ 		GlStateManager.disableAlpha();
++ 		GlStateManager.disableCull();
++ 		GlStateManager.depthMask(false);
++ 		GlStateManager.tryBlendFuncSeparate(770, 771, 1, 0);
++ 		GlStateManager.pushMatrix();
++ 		GlStateManager.rotate(MathHelper.sin(timer / 400.0F) * 25.0F + 20.0F, 1.0F, 0.0F, 0.0F);
++ 		GlStateManager.rotate(-timer * 0.1F, 0.0F, 1.0F, 0.0F);
++ 		for (int j = 0; j < 6; ++j) {
++ 			GlStateManager.pushMatrix();
++ 			if (j == 1) {
++ 				GlStateManager.rotate(90.0F, 0.0F, 1.0F, 0.0F);
++ 			}
++ 			if (j == 2) {
++ 				GlStateManager.rotate(180.0F, 0.0F, 1.0F, 0.0F);
++ 			}
++ 			if (j == 3) {
++ 				GlStateManager.rotate(-90.0F, 0.0F, 1.0F, 0.0F);
++ 			}
++ 			if (j == 4) {
++ 				GlStateManager.rotate(90.0F, 1.0F, 0.0F, 0.0F);
++ 			}
++ 			if (j == 5) {
++ 				GlStateManager.rotate(-90.0F, 1.0F, 0.0F, 0.0F);
++ 			}
++ 			mc.getTextureManager().bindTexture(titlePanoramaPaths[j]);
++ 			worldrenderer.begin(7, DefaultVertexFormats.POSITION_TEX_COLOR);
++ 			worldrenderer.pos(-1.0D, -1.0D, 1.0D).tex(0.0D, 0.0D).color(255, 255, 255, 255).endVertex();
++ 			worldrenderer.pos(1.0D, -1.0D, 1.0D).tex(1.0D, 0.0D).color(255, 255, 255, 255).endVertex();
++ 			worldrenderer.pos(1.0D, 1.0D, 1.0D).tex(1.0D, 1.0D).color(255, 255, 255, 255).endVertex();
++ 			worldrenderer.pos(-1.0D, 1.0D, 1.0D).tex(0.0D, 1.0D).color(255, 255, 255, 255).endVertex();
++ 			tessellator.draw();
++ 			GlStateManager.popMatrix();
++ 		}
++ 		GlStateManager.popMatrix();
++ 		worldrenderer.setTranslation(0.0D, 0.0D, 0.0D);
++ 		GlStateManager.colorMask(true, true, true, true);
++ 		GlStateManager.matrixMode(5889);
++ 		GlStateManager.popMatrix();
++ 		GlStateManager.matrixMode(5888);
++ 		GlStateManager.popMatrix();
++ 		GlStateManager.depthMask(true);
++ 		GlStateManager.enableCull();
++ 		GlStateManager.enableDepth();
++ 		GlStateManager.enableAlpha();
++ 	}
++ 
+
+> CHANGE  1 : 4  @  1 : 5
 
 ~ 		EaglercraftGPU.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 ~ 		EaglercraftGPU.glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);

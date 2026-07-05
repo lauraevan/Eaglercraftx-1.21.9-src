@@ -448,23 +448,18 @@
 ~ 				}
 ~ 			}
 
-> CHANGE  11 : 14  @  11 : 12
+> INSERT  9 : 17  @  9
 
-~ 		// Opticlient: draw the custom menu background stretched full-screen
-~ 		// (a soft dark tint keeps button/label text readable over it).
-~ 		this.mc.getTextureManager().bindTexture(opticlientMenuBg);
++ 		// Opticlient: on menu screens (no world loaded) draw the animated
++ 		// Minecraft title panorama as the background, then a soft dark gradient
++ 		// so button/label text stays readable over it.
++ 		if (this.mc.theWorld == null) {
++ 			GuiMainMenu.renderMenuBackground(this.mc, this.width, this.height);
++ 			this.drawGradientRect(0, 0, this.width, this.height, 0x30000000, 0x70000000);
++ 			return;
++ 		}
 
-> DELETE  1  @  1 : 2
-
-> CHANGE  1 : 6  @  1 : 9
-
-~ 		worldrenderer.pos(0.0D, (double) this.height, 0.0D).tex(0.0D, 1.0D).color(150, 150, 160, 255).endVertex();
-~ 		worldrenderer.pos((double) this.width, (double) this.height, 0.0D).tex(1.0D, 1.0D).color(150, 150, 160, 255)
-~ 				.endVertex();
-~ 		worldrenderer.pos((double) this.width, 0.0D, 0.0D).tex(1.0D, 0.0D).color(150, 150, 160, 255).endVertex();
-~ 		worldrenderer.pos(0.0D, 0.0D, 0.0D).tex(0.0D, 0.0D).color(150, 150, 160, 255).endVertex();
-
-> CHANGE  19 : 21  @  19 : 28
+> CHANGE  33 : 35  @  33 : 42
 
 ~ 	private void openWebLink(String parURI) {
 ~ 		EagRuntime.openLink(parURI);
