@@ -173,7 +173,7 @@
 
 + 		// GlStateManager.cullFace(flag ? GL_FRONT : GL_BACK);
 
-> INSERT  301 : 525  @  301
+> INSERT  301 : 528  @  301
 
 + 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLACK.getMetadata(), "black_concrete");
 + 		this.registerBlock(Blocks.concrete, EnumDyeColor.BLUE.getMetadata(), "blue_concrete");
@@ -398,9 +398,12 @@
 + 		this.registerBlock(Blocks.chiseled_sandstone, "chiseled_sandstone");
 + 		this.registerBlock(Blocks.red_sand, "red_sand");
 + 		this.registerBlock(Blocks.chiseled_bookshelf_empty, "chiseled_bookshelf_empty");
++ 		this.registerBlock(Blocks.smooth_quartz, "smooth_quartz");
++ 		this.registerBlock(Blocks.bricks, "bricks");
++ 		this.registerBlock(Blocks.polished_tuff_bricks, "polished_tuff_bricks");
 + 
 
-> INSERT  174 : 188  @  174
+> INSERT  174 : 189  @  174
 
 + 		this.registerItem(Items.raw_copper, "raw_copper");
 + 		this.registerItem(Items.copper_ingot, "copper_ingot");
@@ -416,5 +419,6 @@
 + 		this.registerItem(Items.netherite_chestplate, "netherite_chestplate");
 + 		this.registerItem(Items.netherite_leggings, "netherite_leggings");
 + 		this.registerItem(Items.netherite_boots, "netherite_boots");
++ 		this.registerItem(Items.elytra, "elytra");
 
 > EOF

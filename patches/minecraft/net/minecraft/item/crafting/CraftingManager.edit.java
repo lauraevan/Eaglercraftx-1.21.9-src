@@ -35,7 +35,7 @@
 + 		this.addRecipe(new ItemStack(Items.copper_ingot, 9),
 + 				new Object[] { "#", Character.valueOf('#'), Blocks.copper_block });
 
-> INSERT  16 : 118  @  16
+> INSERT  16 : 122  @  16
 
 + 
 + 		// Opticlient: recipes for new blocks (real Minecraft obtaining methods)
@@ -139,6 +139,10 @@
 + 				new Object[] { "###", "# #", "# #", Character.valueOf('#'), Items.netherite_ingot });
 + 		this.addRecipe(new ItemStack(Items.netherite_boots),
 + 				new Object[] { "# #", "# #", Character.valueOf('#'), Items.netherite_ingot });
++ 		// Firework Client: elytra + batch 8 recipes
++ 		this.addRecipe(new ItemStack(Items.elytra), new Object[] { "L L", "LFL", " L ", Character.valueOf('L'),
++ 				Items.leather, Character.valueOf('F'), Items.feather });
++ 		this.addRecipe(new ItemStack(Blocks.bricks), new Object[] { "##", "##", Character.valueOf('#'), Items.brick });
 
 > CHANGE  67 : 69  @  67 : 68
 

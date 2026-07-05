@@ -54,7 +54,7 @@
 
 + 		bootstrapStates();
 
-> INSERT  439 : 993  @  439
+> INSERT  439 : 1003  @  439
 
 + 
 + 		// Opticlient: modern building blocks backported from 1.21
@@ -609,6 +609,16 @@
 + 		registerBlock(391, (String) "chiseled_bookshelf_empty",
 + 				(new Block(Material.wood)).setHardness(1.5F).setResistance(1.5F).setStepSound(soundTypeWood)
 + 						.setUnlocalizedName("chiseled_bookshelf_empty").setCreativeTab(CreativeTabs.tabBlock));
++ 
++ 		// Firework Client: batch 8 - smooth/brick variants
++ 		registerBlock(392, (String) "smooth_quartz",
++ 				(new Block(Material.rock)).setHardness(2F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("smooth_quartz").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(393, (String) "bricks", (new Block(Material.rock)).setHardness(2F).setResistance(6F)
++ 				.setStepSound(soundTypeStone).setUnlocalizedName("bricks").setCreativeTab(CreativeTabs.tabBlock));
++ 		registerBlock(394, (String) "polished_tuff_bricks",
++ 				(new Block(Material.rock)).setHardness(1.5F).setResistance(6F).setStepSound(soundTypeStone)
++ 						.setUnlocalizedName("polished_tuff_bricks").setCreativeTab(CreativeTabs.tabBlock));
 + 
 
 > INSERT  29 : 69  @  29

@@ -29,7 +29,7 @@
 
 ~ 	protected static EaglercraftRandom itemRand = new EaglercraftRandom();
 
-> INSERT  470 : 665  @  470
+> INSERT  470 : 668  @  470
 
 + 		registerItemBlock(Blocks.concrete, (new ItemCloth(Blocks.concrete)).setUnlocalizedName("concrete"));
 + 		registerItemBlock(Blocks.smooth_stone);
@@ -225,9 +225,12 @@
 + 		registerItemBlock(Blocks.chiseled_sandstone);
 + 		registerItemBlock(Blocks.red_sand);
 + 		registerItemBlock(Blocks.chiseled_bookshelf_empty);
++ 		registerItemBlock(Blocks.smooth_quartz);
++ 		registerItemBlock(Blocks.bricks);
++ 		registerItemBlock(Blocks.polished_tuff_bricks);
 + 
 
-> INSERT  52 : 79  @  52
+> INSERT  52 : 80  @  52
 
 + 		registerItem(432, (String) "raw_copper",
 + 				(new Item()).setUnlocalizedName("rawCopper").setCreativeTab(CreativeTabs.tabMaterials));
@@ -256,6 +259,7 @@
 + 				(new ItemArmor(ItemArmor.ArmorMaterial.NETHERITE, 3, 2)).setUnlocalizedName("leggingsNetherite"));
 + 		registerItem(445, (String) "netherite_boots",
 + 				(new ItemArmor(ItemArmor.ArmorMaterial.NETHERITE, 3, 3)).setUnlocalizedName("bootsNetherite"));
++ 		registerItem(446, (String) "elytra", (new net.lax1dude.eaglercraft.v1_8.opticlient.ItemElytra()));
 
 > CHANGE  318 : 319  @  318 : 319
 

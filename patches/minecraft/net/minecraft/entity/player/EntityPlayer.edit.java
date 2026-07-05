@@ -36,7 +36,27 @@
 + 	}
 + 
 
-> CHANGE  381 : 382  @  381 : 382
+> INSERT  280 : 297  @  280
+
++ 		// Firework Client: elytra glide - when wearing an elytra and falling
++ 		// through the air, slow the descent and drift forward toward the look
++ 		// direction, giving a gliding feel.
++ 		if (!this.capabilities.isFlying && !this.onGround && this.motionY < 0.0D && this.ridingEntity == null
++ 				&& net.lax1dude.eaglercraft.v1_8.opticlient.ItemElytra.isWearing(this)) {
++ 			this.motionY *= 0.6D;
++ 			if (this.motionY < -0.1D) {
++ 				this.motionY = -0.1D;
++ 			}
++ 			float yaw = this.rotationYaw * 0.017453292F;
++ 			float pitch = this.rotationPitch * 0.017453292F;
++ 			double lookX = (double) (-MathHelper.sin(yaw) * MathHelper.cos(pitch));
++ 			double lookZ = (double) (MathHelper.cos(yaw) * MathHelper.cos(pitch));
++ 			this.motionX += lookX * 0.05D;
++ 			this.motionZ += lookZ * 0.05D;
++ 			this.fallDistance = 0.0F;
++ 		}
+
+> CHANGE  101 : 102  @  101 : 102
 
 ~ 		Collection<ScoreObjective> collection = this.getWorldScoreboard()
 
