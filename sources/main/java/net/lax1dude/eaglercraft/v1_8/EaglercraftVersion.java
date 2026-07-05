@@ -9,7 +9,7 @@ public class EaglercraftVersion {
 	
 	/// Customize these to fit your fork:
 	
-	public static final String projectForkName = "Opticlient";
+	public static final String projectForkName = "Firework Client";
 	public static final String projectForkVersion = "1.0-u53";
 	public static final String projectForkVendor = "lax1dude";
 
@@ -51,7 +51,7 @@ public class EaglercraftVersion {
 	
 	// Miscellaneous variables:
 
-	public static final String mainMenuStringA = "Minecraft: Opticlient 1.8.8";
+	public static final String mainMenuStringA = "Firework Client 1.8.8";
 	public static final String mainMenuStringB = projectOriginName + " " + projectOriginRevision + "-"
 			+ projectOriginVersion + " ultimate [" + EagRuntime.getPlatformType().getName() + "]";
 	public static final String mainMenuStringC = "";
