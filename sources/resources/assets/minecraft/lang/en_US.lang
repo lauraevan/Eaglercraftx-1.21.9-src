@@ -3597,3 +3597,9 @@ item.helmetNetherite.name=Netherite Helmet
 item.chestplateNetherite.name=Netherite Chestplate
 item.leggingsNetherite.name=Netherite Leggings
 item.bootsNetherite.name=Netherite Boots
+
+# Firework Client: elytra + batch 8
+item.elytra.name=Elytra
+tile.smooth_quartz.name=Smooth Quartz Block
+tile.bricks.name=Bricks
+tile.polished_tuff_bricks.name=Polished Tuff Bricks
