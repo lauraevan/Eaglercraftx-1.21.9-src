@@ -33,7 +33,31 @@
 
 ~ 		return (this.getSize() + 1) * this.slotHeight + this.headerPadding;
 
-> CHANGE  109 : 110  @  109 : 110
+> CHANGE  82 : 85  @  82 : 83
+
+~ 			// Opticlient: sample the matching slice of the custom menu background so
+~ 			// the list area blends seamlessly with it, darkened for text readability.
+~ 			this.mc.getTextureManager().bindTexture(Gui.opticlientMenuBg);
+
+> CHANGE  1 : 5  @  1 : 2
+
+~ 			float uL = (float) this.left / (float) this.width;
+~ 			float uR = (float) this.right / (float) this.width;
+~ 			float vT = (float) this.top / (float) this.height;
+~ 			float vB = (float) this.bottom / (float) this.height;
+
+> CHANGE  1 : 9  @  1 : 17
+
+~ 			worldrenderer.pos((double) this.left, (double) this.bottom, 0.0D).tex((double) uL, (double) vB)
+~ 					.color(90, 90, 100, 255).endVertex();
+~ 			worldrenderer.pos((double) this.right, (double) this.bottom, 0.0D).tex((double) uR, (double) vB)
+~ 					.color(90, 90, 100, 255).endVertex();
+~ 			worldrenderer.pos((double) this.right, (double) this.top, 0.0D).tex((double) uR, (double) vT)
+~ 					.color(90, 90, 100, 255).endVertex();
+~ 			worldrenderer.pos((double) this.left, (double) this.top, 0.0D).tex((double) uL, (double) vT)
+~ 					.color(90, 90, 100, 255).endVertex();
+
+> CHANGE  7 : 8  @  7 : 8
 
 ~ 			this.drawSelectionBox(k, l, mouseXIn, mouseYIn, this.getSize());
 
