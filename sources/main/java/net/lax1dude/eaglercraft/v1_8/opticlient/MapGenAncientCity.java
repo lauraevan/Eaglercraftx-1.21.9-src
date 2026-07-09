@@ -24,8 +24,12 @@ import net.minecraft.world.gen.structure.StructureStart;
  */
 public class MapGenAncientCity extends MapGenStructure {
 
-	private final int spacing = 16;
+	// Ancient cities are rare (like vanilla) and never carve the spawn area,
+	// so entering a new world does not stall on "downloading terrain" while a
+	// huge underground hall is filled and re-lit right where the player spawns.
+	private final int spacing = 40;
 	private final int separation = 8;
+	private static final int SPAWN_EXCLUSION_CHUNKS = 40;
 
 	public MapGenAncientCity() {
 	}
@@ -35,6 +39,11 @@ public class MapGenAncientCity extends MapGenStructure {
 	}
 
 	protected boolean canSpawnStructureAtCoords(int chunkX, int chunkZ) {
+		// Keep a large clear radius around world spawn (0,0) so the initial
+		// terrain load is never blocked by an ancient city generation.
+		if (Math.abs(chunkX) < SPAWN_EXCLUSION_CHUNKS && Math.abs(chunkZ) < SPAWN_EXCLUSION_CHUNKS) {
+			return false;
+		}
 		int i = chunkX;
 		int j = chunkZ;
 		if (chunkX < 0) {
